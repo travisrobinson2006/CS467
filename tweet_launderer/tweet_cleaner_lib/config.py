@@ -1,8 +1,10 @@
 BASE_FILE_NAME_UNCLEAN = "tweets"
-NON_CLEANED_TWEETS_DIRECTORY = "unclean_tweets"
+UNCLEANED_TWEETS_DIRECTORY = "unclean_tweets"
 
 BASE_FILE_NAME_CLEAN = "tweets_ready_for_use"
 CLEANED_TWEETS_DIRECTORY = "clean_tweets"
+
+SYMBOLS_TO_DROP = '@#'
 
 STATE_ABBREVIATIONS = {#will convert location to value, allows for multiple ways user may put in location in other words states may have multiple abbreviations so we use value for standardization
 	'ALABAMA':'AL',

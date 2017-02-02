@@ -4,8 +4,8 @@ def tweet_text_cleaner(tweet_text):
 	tweet_text = tweet_text.encode("utf-8") #utf-8 encoding used so tweet text can be properly read (twitter uses utf-8)
 	cleaned_tweet_text = "" #start empty string, will fill with cleaned string
 	for word in tweet_text.split(): #iterate through each word, removing hashtags and tagged people
-		if word[0] not in '#@':
-			cleaned_tweet_text = cleaned_tweet_text + word + ' '
+		if word[0] not in config.SYMBOLS_TO_DROP and not word.startswith('https'):
+			cleaned_tweet_text = cleaned_tweet_text + word + ' '		
 	return cleaned_tweet_text
 
 def tweet_location_cleaner(tweet_location):
