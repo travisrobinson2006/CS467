@@ -1,0 +1,37 @@
+/*body {
+	background: 
+		linear-gradient(-90deg, black, white);
+	background-size: 16px 48px;
+}
+*/
+
+h1 {
+	color: blue;
+	text-align: center;
+}
+
+.center{
+	background-color: white;
+	width: 60%;
+	margin: auto;
+}
+
+.debug {
+	color: red;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#map_usa{
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+#state_chart{
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
