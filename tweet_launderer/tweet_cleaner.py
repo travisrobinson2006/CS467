@@ -28,14 +28,15 @@ for potential_tweets_file in glob.glob("*.json"):
 					#if a good language validator can be found, we should insert it here, else do nothing at this point
 					#print to proper file
 
+
 			except Exception as e:
 				print("There was an error with file " + potential_tweets_file + ": " + str(e))
 
 
 clean_tweets_directory = os.path.abspath('../' + config.CLEANED_TWEETS_DIRECTORY)
-output = open(os.path.join(clean_tweets_directory,config.BASE_FILE_NAME_CLEAN),'a')
-output.write("well hello there")
-output.close()
+#output = open(os.path.join(clean_tweets_directory,config.BASE_FILE_NAME_CLEAN),'a')
+#output.write("well hello there")
+#output.close()
 
-#with open(clean_tweets_directory,'r') as output:#permission errors on windows testing environment
-#	output.write("well hello there")
+with open(clean_tweets_directory,'r') as output:#permission errors on windows testing environment
+	output.write("well hello there")
