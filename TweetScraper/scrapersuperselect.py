@@ -1,12 +1,12 @@
-import settings
+import tweet_scraper_lib.settings as settings
 import tweepy
 import dataset
 from textblob import TextBlob
 from sqlalchemy.exc import ProgrammingError
 import json
 import time
-import dumpcsv
-import dumpjson
+import tweet_scraper_lib.dumpcsv as dumpcsv
+import tweet_scraper_lib.dumpjson as dumpjson
 import atexit
 
 
