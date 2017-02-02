@@ -10,7 +10,7 @@ import dumpjson
 import atexit
 
 
-atexit.register(dumpcsv.dumpcsv)
+#atexit.register(dumpcsv.dumpcsv)
 atexit.register(dumpjson.dumpjson)
 
 db = dataset.connect(settings.CONNECTION_STRING)
