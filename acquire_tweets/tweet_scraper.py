@@ -9,23 +9,14 @@ import tweet_scraper_lib.dumpcsv as dumpcsv
 import tweet_scraper_lib.dumpjson as dumpjson
 import atexit
 
+from apscheduler.scheduler import Scheduler
+import logging
 
 #atexit.register(dumpcsv.dumpcsv)
 atexit.register(dumpjson.dumpjson)
 
-db = dataset.connect(settings.CONNECTION_STRING)
 
-shows=settings.TRACK_TERMS
-
-print shows[0]
-for show in shows:
-	print show
-
-day = time.localtime(time.time())[7]
-hour = time.localtime(time.time())[3]
-minute = time.localtime(time.time())[4]
-fulltime = str(day) + '-' + str(hour) + '-'+ str(minute)
-print fulltime
+#print fulltime
 
 #global filename
 #filename = 'tweets' + fulltime + '.csv'
@@ -62,7 +53,7 @@ class StreamListener(tweepy.StreamListener):
 	shows = settings.TRACK_TERMS
 	for show in shows:
 		if text.lower().find(show.lower()) != -1 and lang == 'en':
-			print "Found a good tweet"
+#			print "Found a good tweet"
 			
 			#delimiter = "|~|"
 			#print text, delimiter, loc, delimiter, coords
@@ -71,7 +62,7 @@ class StreamListener(tweepy.StreamListener):
 			#target.close()
 
 			table = db[settings.TABLE_NAME]
-	
+			temp_table = temp_db[settings.TABLE_NAME]
         		try:
 				table.insert(dict(
 					#user_description=description,
@@ -89,10 +80,26 @@ class StreamListener(tweepy.StreamListener):
 					#polarity=sent.polarity,
 					#subjectivity=sent.subjectivity,
 					))
+				temp_table.insert(dict(
+					#user_description=description,
+					user_location=loc,
+					coordinates=coords,
+					text=text,
+					#geo=geo,
+					#user_name=name,
+					#user_created=user_created,
+					#user_followers=followers,
+					#id_str=id_str,
+					#created=created,
+					#retweet_count=retweets,
+					#user_bg_color=bg_color,
+					#polarity=sent.polarity,
+					#subjectivity=sent.subjectivity,
+					))
 			except ProgrammingError as err:
 				print(err)
-		else:
-			print "Full show name not in tweet, or not in english"
+#		else:
+#			print "Full show name not in tweet, or not in english"
 			
 
     def on_error(self, status_code):
@@ -112,6 +119,35 @@ api = tweepy.API(auth)
 #statusupdate = "Testing!5"
 #api.update_status(status=statusupdate)
 
-stream_listener = StreamListener()
-stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
-stream.filter(track=settings.TRACK_TERMS)
+#stream_listener = StreamListener()
+#stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
+#stream.filter(track=settings.TRACK_TERMS)
+
+
+def tweet_scraper():
+
+	global db
+	db = dataset.connect(settings.CONNECTION_STRING)
+
+	global temp_db
+	temp_db = dataset.connect(settings.TEMP_CONNECTION_STRING)
+
+	shows=settings.TRACK_TERMS
+
+	#print shows[0]
+	#for show in shows:
+	#	print show
+
+	day = time.localtime(time.time())[7]
+	hour = time.localtime(time.time())[3]
+	minute = time.localtime(time.time())[4]
+	fulltime = str(day) + '-' + str(hour) + '-'+ str(minute)
+
+	scheduler = Scheduler()
+	scheduler.start()
+	scheduler.add_interval_job(dumpjson.dumpjson,hours=1)
+	logging.basicConfig()
+
+	stream_listener = StreamListener()
+	stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
+	stream.filter(track=settings.TRACK_TERMS)	

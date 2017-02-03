@@ -1,8 +1,15 @@
+#Travis Robinson
+#Centaurus
+#CS467
+#Oregon State University
+
 BASE_FILE_NAME_UNCLEAN = "tweets"
-UNCLEANED_TWEETS_DIRECTORY = "unclean_tweets"
+UNCLEANED_TWEETS_DIRECTORY = "acquire_tweets/unclean_tweets"
 
 BASE_FILE_NAME_CLEAN = "tweets_ready_for_use"
 CLEANED_TWEETS_DIRECTORY = "clean_tweets"
+
+LIST_OF_CLEANED_TWEET_FILES = "list_of_cleaned_tweet_files"
 
 SYMBOLS_TO_DROP = '@#'
 

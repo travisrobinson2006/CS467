@@ -1,5 +1,10 @@
 import config
 
+#Travis Robinson
+#Centaurus
+#CS467
+#Oregon State University
+
 def tweet_text_cleaner(tweet_text):
 	tweet_text = tweet_text.encode("utf-8") #utf-8 encoding used so tweet text can be properly read (twitter uses utf-8)
 	cleaned_tweet_text = "" #start empty string, will fill with cleaned string
@@ -17,11 +22,13 @@ def tweet_location_cleaner(tweet_location):
 			last_word = tweet_location.split()[len(tweet_location.split())-1]#split off last word
 			if last_word.upper() in config.COUNTRY_ABBREVIATIONS.keys() or last_word.upper() in config.COUNTRY_ABBREVIATIONS.values():#check if last word is US
 				potential_state = tweet_location.split()[len(tweet_location.split())-2]#if the last word is the US, see if a valid state is provided
-				valid_state_checker(potential_state)
+				return valid_state_checker(potential_state)
 			else:#if last word is not US see if it's a valid state
 				return valid_state_checker(last_word)
 		else:
-			raise TypeError('ERROR: THIS CODE SHOULD NOT BE EXECUTED: TWEET_LOCATION_CLEANER: TWEET LOCATION HAD LENGTH 0 BUT WAS NOT OF TYPE NONE')
+#			raise TypeError('ERROR: THIS CODE SHOULD NOT BE EXECUTED: TWEET_LOCATION_CLEANER: TWEET LOCATION HAD LENGTH 0 BUT WAS NOT OF TYPE NONE')
+			print('ERROR: THIS CODE SHOULD NOT BE EXECUTED: TWEET_LOCATION_CLEANER: TWEET LOCATION HAD LENGTH 0 BUT WAS NOT OF TYPE NONE')
+			return False
 	else:#have a null value for user location
 		return False
 
