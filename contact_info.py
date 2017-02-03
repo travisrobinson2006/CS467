@@ -7,3 +7,5 @@
 SENDING_EMAIL = "travisrobinson2006@gmail.com"
 
 RECEIVING_EMAILS = ["robitrav@oregonstate.edu"]
+
+SECRET_CODE = "axaqbqrprggfbvbz"

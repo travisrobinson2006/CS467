@@ -20,7 +20,7 @@ def send_message_helper(sender,recipient,message_subject,message_text):
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(sender, "axaqbqrprggfbvbz")
+    server.login(sender, contact_info.SECRET_CODE)
     text = msg.as_string()
     server.sendmail(sender, recipient, text)
     server.quit()
