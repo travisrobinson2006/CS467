@@ -37,9 +37,10 @@ def clean_tweets():
 					for i in tweets:
 						clean_text = tweet_cleaner_tools.tweet_text_cleaner(i['text'])#clean up tweet text
 						clean_location = tweet_cleaner_tools.tweet_location_cleaner(i['user_location'])#clean tweet location
-						if clean_location != False:#check if a valid location, dispose of if it's not
+						show_name = tweet_cleaner_tools.get_show_name(clean_text.lower())
+						if clean_location != False and show_name != False:#check if a valid location, dispose of if it's not
 							with open(clean_tweets_directory,'a') as output:#write cleaned tweet text and location if tweet is valid
-								output.write(clean_text + '\t' + clean_location + '\n')
+								output.write(show_name + '\t' + clean_text + '\t' + clean_location + '\n')
 				except Exception as e:
 					error_message = "There was an error with file " + potential_tweets_file + ": " + str(e)
 					print(error_message)

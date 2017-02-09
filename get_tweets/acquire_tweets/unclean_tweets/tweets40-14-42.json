@@ -1,0 +1,42 @@
+{
+  "count": 6, 
+  "results": [
+    {
+      "id": 1, 
+      "text": "RT @nytimestravel: Damien Chazelle, writer and director of \"La La Land,\" on what he loves about L.A. https://t.co/a5ftWTCQMi", 
+      "user_location": "Lyme Regis & London", 
+      "coordinates": null
+    }, 
+    {
+      "id": 2, 
+      "text": "RT @SoDamnTrue: the new Stranger Things commercial looks so good!!! https://t.co/8pjnIr6SEk", 
+      "user_location": "im not here", 
+      "coordinates": null
+    }, 
+    {
+      "id": 3, 
+      "text": "@RachelCruze hidden figures!!", 
+      "user_location": null, 
+      "coordinates": null
+    }, 
+    {
+      "id": 4, 
+      "text": "RT @BlackToLive: 'Hidden Figures' has now earned more money in the U.S. than 'La La Land' https://t.co/tcbF9iCavu", 
+      "user_location": "New York, NY", 
+      "coordinates": null
+    }, 
+    {
+      "id": 5, 
+      "text": "RT @BlackToLive: 'Hidden Figures' has now earned more money in the U.S. than 'La La Land' https://t.co/tcbF9iCavu", 
+      "user_location": "New York, NY", 
+      "coordinates": null
+    }, 
+    {
+      "id": 6, 
+      "text": "Stranger Things needs to come out with a video game", 
+      "user_location": "Pittsburgh,PA", 
+      "coordinates": null
+    }
+  ], 
+  "meta": {}
+}

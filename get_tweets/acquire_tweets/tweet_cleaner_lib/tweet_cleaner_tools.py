@@ -1,4 +1,5 @@
-import config
+import tweet_cleaner_config as config
+
 
 #Travis Robinson
 #Centaurus
@@ -32,7 +33,6 @@ def tweet_location_cleaner(tweet_location):
 	else:#have a null value for user location
 		return False
 
-
 def valid_state_checker(tweet_location):
 	if tweet_location.upper() in config.STATE_ABBREVIATIONS.keys():#see if location in keys
 		return config.STATE_ABBREVIATIONS[tweet_location.upper()]
@@ -40,3 +40,9 @@ def valid_state_checker(tweet_location):
 		return tweet_location.upper()
 	else:#if location not in either, bad location, return false
 		return False	
+
+def get_show_name(tweet_text):
+	for i in config.TRACK_TERMS:
+		if i.lower() in tweet_text:
+			return i.lower()
+	return False

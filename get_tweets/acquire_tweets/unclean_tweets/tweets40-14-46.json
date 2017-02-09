@@ -1,0 +1,66 @@
+{
+  "count": 10, 
+  "results": [
+    {
+      "id": 1, 
+      "text": "someone call for the greatest ship on pretty little liars? https://t.co/4qZUXd8j8u", 
+      "user_location": "oprahnators ", 
+      "coordinates": null
+    }, 
+    {
+      "id": 2, 
+      "text": "RT @billyeichner: PUT THE STRANGER THINGS KIDS ON THE SUPREME COURT", 
+      "user_location": "Littleton, Colorado", 
+      "coordinates": null
+    }, 
+    {
+      "id": 3, 
+      "text": "RT @AmyHouckCEO: Survivors face new roadblocks in peek at \u2018Walking Dead\u2019 midseason premiere https://t.co/A5TF8ztuVC https://t.co/oW5NsfwqhD", 
+      "user_location": "Durham, NC", 
+      "coordinates": null
+    }, 
+    {
+      "id": 4, 
+      "text": "RT @Calum5SOS: Just started breaking bad...", 
+      "user_location": "Guadalajara, Jalisco", 
+      "coordinates": null
+    }, 
+    {
+      "id": 5, 
+      "text": "RT @billyeichner: PUT THE STRANGER THINGS KIDS ON THE SUPREME COURT", 
+      "user_location": "NorthShore, Massachusetts, USA", 
+      "coordinates": null
+    }, 
+    {
+      "id": 6, 
+      "text": "RT @WestworldGifs: Nevertheless, she persisted. #Westworld https://t.co/E3PbZPzaMO", 
+      "user_location": "Here & Instagram", 
+      "coordinates": null
+    }, 
+    {
+      "id": 7, 
+      "text": "RT @BlackToLive: 'Hidden Figures' has now earned more money in the U.S. than 'La La Land' https://t.co/tcbF9iCavu", 
+      "user_location": null, 
+      "coordinates": null
+    }, 
+    {
+      "id": 8, 
+      "text": "RT @BlackToLive: 'Hidden Figures' has now earned more money in the U.S. than 'La La Land' https://t.co/tcbF9iCavu", 
+      "user_location": null, 
+      "coordinates": null
+    }, 
+    {
+      "id": 9, 
+      "text": "RT @SoDamnTrue: the new Stranger Things commercial looks so good!!! https://t.co/8pjnIr6SEk", 
+      "user_location": null, 
+      "coordinates": null
+    }, 
+    {
+      "id": 10, 
+      "text": "RT @NascarWorldNews: \u2018The Simpsons\u2019 welcome Jeff Gordon, Dale Earnhardt Jr. to latest Daytona Day adventure https://t.co/rQlIxfR1d4 https:/\u2026", 
+      "user_location": "Evansville, IN", 
+      "coordinates": null
+    }
+  ], 
+  "meta": {}
+}

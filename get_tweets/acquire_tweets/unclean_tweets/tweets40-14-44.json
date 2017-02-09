@@ -1,0 +1,30 @@
+{
+  "count": 4, 
+  "results": [
+    {
+      "id": 1, 
+      "text": "strangerthingscast:The Stranger Things kids reacting to what... #strangerthings #eleven #theupsidedown #tumblr https://t.co/UUQDn4BUrc", 
+      "user_location": "UpsideDown", 
+      "coordinates": null
+    }, 
+    {
+      "id": 2, 
+      "text": "RT @ChrisRemson: Ayye! \"Stranger Things\" go crazy!!", 
+      "user_location": "brooklyn", 
+      "coordinates": null
+    }, 
+    {
+      "id": 3, 
+      "text": "RT @Zoella: I'm not sure how I'm going to be able to wait until Halloween for Stranger Things 2! \ud83c\udf83 https://t.co/4hrmQvjwyX", 
+      "user_location": "United Kingdom", 
+      "coordinates": null
+    }, 
+    {
+      "id": 4, 
+      "text": "City of Stars - La La Land @RyanGosling https://t.co/Gfc1r8zQqu", 
+      "user_location": "Brunete - Madrid ", 
+      "coordinates": null
+    }
+  ], 
+  "meta": {}
+}
