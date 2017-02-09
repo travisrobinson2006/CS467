@@ -26,9 +26,9 @@ def tweet_location_cleaner(tweet_location):
 				return valid_state_checker(potential_state)
 			else:#if last word is not US see if it's a valid state
 				return valid_state_checker(last_word)
-		else:
+		else:#tweet location is whitespace
 #			raise TypeError('ERROR: THIS CODE SHOULD NOT BE EXECUTED: TWEET_LOCATION_CLEANER: TWEET LOCATION HAD LENGTH 0 BUT WAS NOT OF TYPE NONE')
-			print('ERROR: THIS CODE SHOULD NOT BE EXECUTED: TWEET_LOCATION_CLEANER: TWEET LOCATION HAD LENGTH 0 BUT WAS NOT OF TYPE NONE')
+#			print('ERROR: THIS CODE SHOULD NOT BE EXECUTED: TWEET_LOCATION_CLEANER: TWEET LOCATION HAD LENGTH 0 BUT WAS NOT OF TYPE NONE')
 			return False
 	else:#have a null value for user location
 		return False

@@ -23,6 +23,13 @@ def clean_tweets():
 	print("cleaning tweets...")
 	tweet_cleaner.clean_tweets()
 
+
+try:#on launch clean whatever tweets are already there are uncleaned
+	clean_tweets()
+except:
+	error_message = "Error: " + str(e)
+	print(error_message)
+	error_message_sender.send_error_message(error_message)	
 try:
 	scheduler = Scheduler()#scheduler used to set up tweet cleaning schedule
 	scheduler.start()
