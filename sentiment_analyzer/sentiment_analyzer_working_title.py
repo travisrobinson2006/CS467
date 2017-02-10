@@ -15,13 +15,26 @@ def optimize_tweet_text(tweet_text):
 				break
 		if word_needed == True:
 			tweet_text_return = tweet_text_return + i + " "
-#		if i.lower() not in config.UNNEEDED_WORDS:
-#			tweet_text_temp = tweet_text_temp + i + " "
 	return tweet_text_return.strip()
 
 #get show sentiment, return a number
 def get_show_sentiment(tweet_text):
-	return 0
+	tweet_score = 0
+	with open(config.SENTIMENT_DICTIONARY) as sentiment_dictionary:
+		reader = csv.reader(sentiment_dictionary,delimiter=' ')
+		for row in reader:
+			usable_row = row[0].split(",")#convert row into a list so we can check if tweet word is in there, get the sentiment
+			sentiment_word = usable_row[config.SENTIMENT_DICTIONARY_WORD]
+			tweet_text_split = tweet_text.split()
+			for index,word in enumerate(tweet_text_split):
+				if re.search(r"\b" + re.escape(word) + r"\b", sentiment_word):
+					word_score = usable_row[config.SENTIMENT_DICTIONARY_SCORE]
+					for i in range(0,index):
+						#get multiplier
+						if config.MULTIPLIER_WORDS.has_key(tweet_text_split[i]):
+							word_score *= int(config.MULTIPLIER_WORDS[tweet_text_split[i]])
+					tweet_score += int(word_score)
+	return tweet_score
 
 #analyze tweet, return state, show name, and sentiment score
 def tweet_analyzer(tweet_data):
@@ -35,16 +48,8 @@ def tweet_analyzer(tweet_data):
 		return False
 
 	tweet_text = optimize_tweet_text(tweet_text)#could do one line, want it readable
-
 	if show_name == False or tweet_state == False:
 		return False
-
-	with open(config.SENTIMENT_DICTIONARY) as sentiment_dictionary:
-		reader = csv.reader(sentiment_dictionary,delimiter=' ')
-		for row in reader:
-			usable_row = row[0].split(",")#convert row into a list so we can check if tweet word is in there, get the sentiment
-			if re.search(r"\b" + re.escape(usable_row[1]) + r"\b", tweet_text):#use regex since we need whole words-http://stackoverflow.com/questions/4154961/find-substring-in-string-but-only-if-whole-words
-				print(usable_row[1] + ": " + usable_row[2])
 	show_sentiment = get_show_sentiment(tweet_text)
 #	if show_sentiment == 0:
 		#send show text to another file, so we can examine for possible addition to dictionary

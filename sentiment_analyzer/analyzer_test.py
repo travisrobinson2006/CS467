@@ -7,3 +7,4 @@ TEST_TERMS = [
 
 for i in TEST_TERMS:
 	print(analyzer.tweet_analyzer(i))
+#	analyzer.tweet_analyzer(i)
