@@ -21,6 +21,7 @@ def optimize_tweet_text(tweet_text):
 #get show sentiment, return a number
 def get_show_sentiment(tweet_text):
 	tweet_score = 0
+#	print(tweet_text)
 	with open(config.SENTIMENT_DICTIONARY) as sentiment_dictionary:
 		reader = csv.reader(sentiment_dictionary,delimiter=' ')
 		for row in reader:
@@ -28,7 +29,7 @@ def get_show_sentiment(tweet_text):
 			sentiment_word = usable_row[config.SENTIMENT_DICTIONARY_WORD]
 			tweet_text_split = tweet_text.split()
 			for index,word in enumerate(tweet_text_split):
-				if re.search(r"\b" + re.escape(word) + r"\b", sentiment_word):
+				if re.search(r"\b" + re.escape(word) + r"\b", r"\b" + re.escape(sentiment_word) + r"\b"):
 #					print(word)
 					word_score = usable_row[config.SENTIMENT_DICTIONARY_SCORE]
 					for i in range(0,index):
