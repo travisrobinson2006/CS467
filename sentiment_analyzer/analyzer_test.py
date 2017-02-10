@@ -9,24 +9,7 @@ with open("sample_tweets.txt") as tweets:
 	tweets = tweets.readlines()
 	for i in tweets:
 		print(analyzer.tweet_analyzer(i))
-
-tweetfile = open("sample_tweets.txt", "r")
-
-tweetlist = []
-for line in tweetfile:
-	tweetlist.append(line)
-
-for i in tweetlist:
-#	print i
-	print(analyzer.tweet_analyzer(i))
-
-#for i in TEST_TERMS:
-#	print(analyzer.tweet_analyzer(i))
-#	analyzer.tweet_analyzer(i)
-
-
-
-#	print(tweets)
+#		analyzer.tweet_analyzer(i)
 
 #for i in TEST_TERMS:
 #	print(analyzer.tweet_analyzer(i))

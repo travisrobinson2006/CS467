@@ -1,6 +1,7 @@
 import sentiment_analyzer_lib.sentiment_analyzer_config as  config
 import csv
 import re
+import pandas
 
 #remove extra words, such as 'the' and 'and'
 def optimize_tweet_text(tweet_text):
@@ -28,6 +29,7 @@ def get_show_sentiment(tweet_text):
 			tweet_text_split = tweet_text.split()
 			for index,word in enumerate(tweet_text_split):
 				if re.search(r"\b" + re.escape(word) + r"\b", sentiment_word):
+#					print(word)
 					word_score = usable_row[config.SENTIMENT_DICTIONARY_SCORE]
 					for i in range(0,index):
 						#get multiplier
@@ -55,6 +57,6 @@ def tweet_analyzer(tweet_data):
 		#send show text to another file, so we can examine for possible addition to dictionary
 
 	#put sentiment, show name and state into results
-	return [show_name,tweet_state,show_sentiment]
-
-
+	results = [(show_name,tweet_state,show_sentiment)]
+	data = pandas.DataFrame.from_records(results,columns=config.COLUMN_LABELS)
+	return data#will remove when ready to send data to database instead
