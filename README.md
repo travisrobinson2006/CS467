@@ -1,4 +1,4 @@
-To get access to the master node:
+<b>To get access to the master node:</b>
 
 1) Open the email to accept the invite to our project (should be from Google Cloud Platform).
 
@@ -14,23 +14,22 @@ To get access to the master node:
 
 7) Enter "cd robitrav" followed by "cd CS467". This will bring you to a directory that contains our project files (identical to the ones on our GitHub page). 
 
-To get tweets:
+<b>To collect tweets:</b>
 
 1) Navigate into get_tweets directory
 
 2) Run Python script called run_me_to_get_tweets
-	This will be done from command line via 'python run_me_to_get_tweets.py' (without the quotes)*
-	This script will call on the tweet_scraper script contained int he acquire_tweets directory, which uses the Twitter streaming API
-	to collect some portion of the tweets as they are being sent out.
-	The script will also run the tweet_cleaner script, which is also contained in the acquire_tweets directory. The cleaning script will
-	check that the scraped tweets have appropriate/usable locations, and cleans up the text a little bit (discarding hashtags, etc). It 
-	also converts the tweets to a tab delimited text file, which is generally preferred by HDFS.
-	The run_me_to_get_tweets script will run an initial cleaning to take care of anything that may have been left behind from the last
+
+This will be done from command line via 'python run_me_to_get_tweets.py' (without the quotes)*
+	
+This script will call on the tweet_scraper script contained int he acquire_tweets directory, which uses the Twitter streaming 		API to collect some portion of the tweets as they are being sent out. The script will also run the tweet_cleaner script, which 		is also contained in the acquire_tweets directory. The cleaning script will check that the scraped tweets have 				appropriate/usable locations, and cleans up the text a little bit (discarding hashtags, etc). It also converts the tweets to a tab delimited text file, which is generally preferred by HDFS.
+
+The run_me_to_get_tweets script will run an initial cleaning to take care of anything that may have been left behind from the last
 	time that the script was run, and then runs the cleaning script once an hour. The tweet_scraper runs the dumpjson script once an 
-	hour as well. This is to prevent a large build-up of data that could lead to large processing times if data was only dumped/cleaned
-	once.
-	The dumpjson script will place timestamped json files in the directory unclean_tweets, located in the acquire_tweets directory. The 
-	tweet_cleaner script will append all cleaned tweets to the file called tweets_ready_for_use, located inside the clean_tweets directory,
+	hour as well. This is to prevent a large build-up of data that could lead to large processing times if data was only dumped/cleaned once.
+	
+The dumpjson script will place timestamped json files in the directory unclean_tweets, located in the acquire_tweets directory. The 
+	tweet_cleaner script will append all cleaned tweets to the file called tweets_ready_for_use, located inside the clean_tweetsdirectory,
 	which in turn is located in the get_tweets directory.	
 
 
