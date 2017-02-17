@@ -1,5 +1,6 @@
 To get access to the master node:
 1) Open the email to accept the invite to our project (should be from Google Cloud Platform).
+
 2) Create a Google Cloud Platform account, if you do not already have one.
 3) Log into Google Cloud Platform. Next to the text "Google Cloud Platform," click and select our project (the name is "hdp-dataproc")
 4) Click the "Products and Services" button (looks like three horizontal lines at the top left of the window). Then scroll down and select "Compute Engine."
