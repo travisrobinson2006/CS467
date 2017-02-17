@@ -61,10 +61,6 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 	
 	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used by Tableau to generate our maps and state graphs.
 
-
-Running a hive script from the bash shell:
-$ hive -e < filename.hql
-
 Outputting to a CSV file:
 INSERT OVERWRITE LOCAL DIRECTORY '/home/robitrav/temp' 
 ROW FORMAT DELIMITED 
@@ -74,7 +70,7 @@ SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content
 *To allow yourself the ability to run other programs, navigate directories, etc it's recommended to run the run_me_to_get_tweets
 script in the background, via the command line command python 'run_me_to_get_tweets.py &'
 
-**It will most likely be easier to navigate to the main directory and enter at the command line 'hive -hiveconf dir='<your_choice_of_dir>' -f testscript.hql',
+**It will most likely be easier to navigate to the main (the CS467) directory and enter at the command line 'hive -hiveconf dir='<your_choice_of_dir>' -f testscript.hql',
 where <your_choice_of_dir> is the directory name you'd like to use. This will save the csv file in the directory name you specify. (You do need to specify your
 user directory though; for example, my user name is robitrav, so to save to a directory called temp, I'd need to enter at the command line 
 hive -hiveconf dir='robitrav/temp' -f testscript.hql).
