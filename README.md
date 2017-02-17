@@ -60,7 +60,7 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 	FIELDS TERMINATED BY ','
 	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;
 	
-	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used by Tableau to generate our maps and state graphs.
+	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used 	by Tableau to generate our maps and state graphs.
 
 Outputting to a CSV file:
 INSERT OVERWRITE LOCAL DIRECTORY '/home/robitrav/temp' 
