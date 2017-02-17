@@ -8,11 +8,12 @@
 
 4) Click the "Products and Services" button (looks like three horizontal lines at the top left of the window). Then scroll down and select "Compute Engine."
 
-5) You should now be brought to a page where you can see the VM instances that comprise our cluster. The first one will be name 'tweet-cluster-m' (m for master). To the right of the name, under the "Connect" column, click the "SSH" button. This will open a new window and transfer all keys automatically to SSH into the instance.
+5) You should now be brought to a page where you can see the VM instances that comprise our cluster (should be at https://console.cloud.google.com/compute/instances?project=hdp-dataproc&authuser=1). The first one will be name 'tweet-cluster-m' (m for master). To the right of the name, under the "Connect" column, click the "SSH" button. This will open a new window and transfer all keys automatically to SSH into the instance.
 
 6) Once the console is brought up, enter "cd .." followed by "ls" to see the directories for each user.
 
-7) Enter "cd robitrav" followed by "cd CS467". This will bring you to a directory that contains our project files (identical to the ones on our GitHub page). 
+7) Enter "cd robitrav" followed by "cd CS467". This will bring you to a directory that contains our project files (identical to the ones on our GitHub page). (Alternatively, due to permissions set-up, such as when running the below hive script, it may be best
+to clone the repository into your own user directory, via git clone https://github.com/travisrobinson2006/CS467.git).
 
 <b>To collect tweets:</b>
 
@@ -53,12 +54,12 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 2)	From the hive command line (denoted by the line starting with 'hive>') enter 'use testdb;' This tells Hive which database we 		want to use. testdb is the database that is currently storing the sentiment data.
 
 3)	Enter at the hive command line (or copy and paste):
-	INSERT OVERWRITE LOCAL DIRECTORY '/home/robitrav/temp' 
+	INSERT OVERWRITE LOCAL DIRECTORY '<directory>***' 
 	ROW FORMAT DELIMITED 
 	FIELDS TERMINATED BY ','
 	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;
 	
-	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file*** that is used 		by Tableau to generate our maps and state graphs.
+	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used 		by Tableau to generate our maps and state graphs.
 
 
 Running a hive script from the bash shell:
@@ -78,4 +79,6 @@ where <your_choice_of_dir> is the directory name you'd like to use. This will sa
 user directory though; for example, my user name is robitrav, so to save to a directory called temp, I'd need to enter at the command line 
 hive -hiveconf dir='robitrav/temp' -f testscript.hql).
 
-***The file will actually need to be converted to an Excel file, which can be done by most spreadsheet programs.
+***Your directory of choice, for testing purposes the directory 'home/robitrav/temp' was used, though due to permissions you may or may not be able to create a file or directory in the robitrav user directory
+
+****The file will actually need to be converted to an Excel file, which can be done by most spreadsheet programs.
