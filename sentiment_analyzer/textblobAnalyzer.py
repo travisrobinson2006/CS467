@@ -18,8 +18,8 @@ def stripNonAscii(string):
         return ''.join(stripped)
 
 #specify the names of the input file to be processed and the output file to be produced.
-inputfilename = "tweets-2-15"
-outputfilename = "textblobScores-2-15.txt"
+inputfilename = "tweets_ready_for_use"
+outputfilename = "textblobScores_demo.txt"
 
 #define columns
 showCol = 0

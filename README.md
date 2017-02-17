@@ -35,7 +35,10 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 
 <b>To get a sentiment score for each tweet</b>
 
-1) In the sentiment_analyzer folder (located in the CS467 directory), open the file named "textblobAnalyzer.py". On lines 21 and 22, you will see a place to specify the names of the input file (the tweets to be scores) and the output file (the file that will contain the name of the show a tweet was about, the state it originated from, and its sentiment score). Make sure the name of the input file matches the one you produced in the previous set of steps. You may choose whatever output file name you like.
+1) In the sentiment_analyzer folder (located in the CS467 directory), open the file named "textblobAnalyzer.py". On lines 21 and 22, you will see a place to specify the names of the 
+input file (the tweets to be scores) and the output file (the file that will contain the name of the show a tweet was about, the state it originated from, and its sentiment score). 
+The input file should be the one you produced in the previous set of steps (tweets_ready_for_use, which will need to be copied into the sentiment_analyzer directory (via cp -i /home/robitrav/CS467/get_tweets/clean_tweets/tweet
+s_ready_for_use /home/robitrav/CS467/sentiment_analyzer/). You may choose whatever output file name you like.
 
 2) Run the program by entering "python textblobAnalyzer.py" in the command line. Depending on the size of the input file, this may take up to 2 minutes. 
 
