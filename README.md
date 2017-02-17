@@ -1,3 +1,12 @@
+To get access to the master node:
+1) Open the email to accept the invite to our project (should be from Google Cloud Platform).
+2) Create a Google Cloud Platform account, if you do not already have one.
+3) Log into Google Cloud Platform. Next to the text "Google Cloud Platform," click and select our project (the name is "hdp-dataproc")
+4) Click the "Products and Services" button (looks like three horizontal lines at the top left of the window). Then scroll down and select "Compute Engine."
+5) You should now be brought to a page where you can see the VM instances that comprise our cluster. The first one will be name 'tweet-cluster-m' (m for master). To the right of the name, under the "Connect" column, click the "SSH" button. This will open a new window and transfer all keys automatically to SSH into the instance.
+6. Once the console is brought up, enter "cd .." followed by "ls" to see the directories for each user.
+7. Enter "cd robitrav" followed by "cd CS467". This will bring you to a directory that contains our project files (identical to the ones on our GitHub page). 
+
 To get tweets:
 
 1) Navigate into get_tweets directory
