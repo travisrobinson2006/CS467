@@ -48,7 +48,8 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 2) Check that your file was transferred successfully by entering "hadoop fs -ls databases". The output file name should appear.
 
 
-<b>To use hive</b>
+<b>To use hive:</b>
+
 1)	From any location within the cluster instance, enter at command line: 'hive;' or 'hive' (different terminals need the semi-colon)**. This will launch the hive shell, where we will be able to use extract the tweet sentiment scores for shows and states from our HQL database.
 
 2)	From the hive command line (denoted by the line starting with 'hive>') enter 'use testdb;' This tells Hive which database we want to use. testdb is the database that is currently storing the sentiment data.
