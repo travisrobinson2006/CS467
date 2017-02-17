@@ -1,4 +1,4 @@
-import tweet_cleaner_lib.config as config
+import tweet_cleaner_lib.tweet_cleaner_config as config
 import tweet_cleaner_lib.tweet_cleaner_tools as tweet_cleaner_tools
 import json
 import time
