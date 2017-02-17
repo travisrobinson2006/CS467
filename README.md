@@ -49,9 +49,9 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 
 
 <b>To use hive</b>
-1)	From any location within the cluster instance, enter at command line: 'hive;' or 'hive' (different terminals need the semi-		colon)**. This will launch the hive shell, where we will be able to use extract the tweet sentiment scores for shows and states from our HQL database.
+1)	From any location within the cluster instance, enter at command line: 'hive;' or 'hive' (different terminals need the semi-colon)**. This will launch the hive shell, where we will be able to use extract the tweet sentiment scores for shows and states from our HQL database.
 
-2)	From the hive command line (denoted by the line starting with 'hive>') enter 'use testdb;' This tells Hive which database we 		want to use. testdb is the database that is currently storing the sentiment data.
+2)	From the hive command line (denoted by the line starting with 'hive>') enter 'use testdb;' This tells Hive which database we want to use. testdb is the database that is currently storing the sentiment data.
 
 3)	Enter at the hive command line (or copy and paste):
 	INSERT OVERWRITE LOCAL DIRECTORY '<directory>***' 
@@ -59,7 +59,7 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 	FIELDS TERMINATED BY ','
 	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;
 	
-	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used 		by Tableau to generate our maps and state graphs.
+	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used by Tableau to generate our maps and state graphs.
 
 
 Running a hive script from the bash shell:
