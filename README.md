@@ -48,7 +48,7 @@ s_ready_for_use /home/robitrav/CS467/sentiment_analyzer/). You may choose whatev
 
 1) To put the output file you just created into the HDFS (distributed across the three worker nodes), type "hdfs dfs -put <i>outputfilename</i> /databases"
 
-2) Check that your file was transferred successfully by entering "hadoop fs -ls databases". The output file name should appear.
+2) Check that your file was transferred successfully by entering "hadoop fs -ls /databases". The output file name should appear.
 
 
 <b>To use hive:</b>
