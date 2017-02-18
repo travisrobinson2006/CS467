@@ -74,10 +74,8 @@ SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content
 *To allow yourself the ability to run other programs, navigate directories, etc it's recommended to run the run_me_to_get_tweets
 script in the background, via the command line command python 'run_me_to_get_tweets.py &'
 
-**It will most likely be easier to navigate to the main (the CS467) directory and enter at the command line 'hive -hiveconf dir='<your_choice_of_dir>' -f testscript.hql',
-where <your_choice_of_dir> is the directory name you'd like to use. This will save the csv file in the directory name you specify. (You do need to specify your
-user directory though; for example, my user name is robitrav, so to save to a directory called temp, I'd need to enter at the command line 
-hive -hiveconf dir='robitrav/temp' -f testscript.hql).
+**It will most likely be easier to navigate to the main (the CS467) directory and enter at the command line 'hive -hiveconf dir='<i>your_choice_of_dir<i>' -f hive_script.hql',
+where <i>your_choice_of_dir<i> is the directory name you'd like to use. This will save the csv file in the directory name you specify.
 
 ***Your directory of choice, for testing purposes the directory 'home/robitrav/temp' was used, though due to permissions you may or may not be able to create a file or directory in the robitrav user directory
 
