@@ -57,11 +57,11 @@ s_ready_for_use /home/robitrav/CS467/sentiment_analyzer/). You may choose whatev
 
 2)	From the hive command line (denoted by the line starting with 'hive>') enter 'use testdb;' This tells Hive which database we want to use. testdb is the database that is currently storing the sentiment data.
 
-3)	Enter at the hive command line (or copy and paste):
-	INSERT OVERWRITE LOCAL DIRECTORY '<directory>***' 
-	ROW FORMAT DELIMITED 
-	FIELDS TERMINATED BY ','
-	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;
+3)	Enter at the hive command line (or copy and paste):<br>
+	INSERT OVERWRITE LOCAL DIRECTORY '<i>directory<i>***'<br> 
+	ROW FORMAT DELIMITED <br>
+	FIELDS TERMINATED BY ','<br>
+	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;<br>
 	
 	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used 	by Tableau to generate our maps and state graphs.
 
