@@ -63,7 +63,7 @@ s_ready_for_use /home/robitrav/CS467/sentiment_analyzer/). You may choose whatev
 	FIELDS TERMINATED BY ','<br>
 	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;<br>
 	
-	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used 	by Tableau to generate our maps and state graphs.
+	This will create a csv file called 000000_0 (kept in the /home/robitrav/temp directory). This will be the file**** that is used by Tableau to generate our maps and state graphs.
 
 Outputting to a CSV file:
 INSERT OVERWRITE LOCAL DIRECTORY '/home/robitrav/temp' 
