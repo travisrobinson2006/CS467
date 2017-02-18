@@ -58,7 +58,7 @@ s_ready_for_use /home/robitrav/CS467/sentiment_analyzer/). You may choose whatev
 2)	From the hive command line (denoted by the line starting with 'hive>') enter 'use testdb;' This tells Hive which database we want to use. testdb is the database that is currently storing the sentiment data.
 
 3)	Enter at the hive command line (or copy and paste):<br>
-	INSERT OVERWRITE LOCAL DIRECTORY '<i>directory<i>***'<br> 
+	INSERT OVERWRITE LOCAL DIRECTORY '<i>directory</i>***'<br> 
 	ROW FORMAT DELIMITED <br>
 	FIELDS TERMINATED BY ','<br>
 	SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;<br>
@@ -74,8 +74,8 @@ SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content
 *To allow yourself the ability to run other programs, navigate directories, etc it's recommended to run the run_me_to_get_tweets
 script in the background, via the command line command python 'run_me_to_get_tweets.py &'
 
-**It will most likely be easier to navigate to the main (the CS467) directory and enter at the command line 'hive -hiveconf dir='<i>your_choice_of_dir<i>' -f hive_script.hql',
-where <i>your_choice_of_dir<i> is the directory name you'd like to use. This will save the csv file in the directory name you specify.
+**It will most likely be easier to navigate to the main (the CS467) directory and enter at the command line 'hive -hiveconf dir='<i>your_choice_of_dir</i>' -f hive_script.hql',
+where <i>your_choice_of_dir</i> is the directory name you'd like to use. This will save the csv file in the directory name you specify.
 
 ***Your directory of choice, for testing purposes the directory 'home/robitrav/temp' was used, though due to permissions you may or may not be able to create a file or directory in the robitrav user directory
 
