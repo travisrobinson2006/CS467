@@ -1,7 +1,11 @@
 import sentiment_analyzer_working_title as analyzer
+from random import randint
 
-with open("sample_tweets.txt") as tweets:
+
+with open("tweets_ready_for_use") as tweets:
 	tweets = tweets.readlines()
-	for i in tweets:
-		print(analyzer.tweet_analyzer(i))
-#		analyzer.tweet_analyzer(i)
+	for i in range(0,30):
+		index = randint(0,len(tweets))
+#		print(tweets[i])
+#		print(analyzer.tweet_analyzer(tweets[i]))
+		analyzer.tweet_analyzer(tweets[index])
