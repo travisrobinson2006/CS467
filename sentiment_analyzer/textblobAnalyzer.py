@@ -19,7 +19,7 @@ def stripNonAscii(string):
 
 #specify the names of the input file to be processed and the output file to be produced.
 inputfilename = "tweets_ready_for_use"
-outputfilename = "textblobScores_demo"
+outputfilename = "textblobScores.txt"
 
 #define columns
 showCol = 0
