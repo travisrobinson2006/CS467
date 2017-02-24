@@ -2,7 +2,7 @@ import glob, os
 import csv
 import nltk
 
-#http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/
+#Source http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/
 
 def get_pos_list():
     with open('pos_set.csv', 'rU') as pos_list:
@@ -76,28 +76,30 @@ def main():
             features['contains(%s)' % word] = (word in document_words)
         return features
 
-    #print extract_features(tweets[0][0])
-
     training_set = nltk.classify.apply_features(extract_features, tweets)
     test_set = nltk.classify.apply_features(extract_features, test_tweets)
 
     classifier = nltk.NaiveBayesClassifier.train(training_set)
-    #print classifier.show_most_informative_features(100)
-    '''
+    print classifier.show_most_informative_features(25)
+
     tweet = 'This house is great'
     #print extract_features(tweet.split())
     sentiment = classifier.classify(extract_features(tweet.split()))
-    #print sentiment
+    print "'This house is great': "
+    print sentiment
 
     tweet = 'Your song is annoying'
     #print extract_features(tweet.split())
     sentiment = classifier.classify(extract_features(tweet.split()))
-    #print sentiment
+    print "'Your song is annoying': "
+    print sentiment
 
     accuracy = nltk.classify.accuracy(classifier, test_set)
+    print "Accuracy against test_set:"
     print accuracy
-    '''
 
+    #output to big file
+    '''
     inputfilename = "tweets_ready_for_use"
     outputfilename = "chase_test"
 
@@ -114,6 +116,6 @@ def main():
             fixedText = stripNonAscii(row[textCol])
             sentiment = classifier.classify(extract_features(fixedText.split()))
             outputfile.write(row[showCol] + '\t' + row[stateCol] + '\t' + str(sentiment) + '\n')
-
+    '''
 
 main()
