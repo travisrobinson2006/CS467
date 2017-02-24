@@ -27,6 +27,13 @@ def stripNonAscii(string):
         stripped = (c for c in string if 0 < ord(c) < 127)
         return ''.join(stripped)
 
+def downsize(list, tweets):
+    for words, sentiment in list:
+        filtered_words = [i.lower() for i in words.split() if len(i) >= 3]
+        tweets.append((filtered_words, sentiment))
+    return tweets
+
+
 def get_words_in_tweets(tweets):
     all_words = []
     for (words, sentiment) in tweets:
@@ -38,13 +45,13 @@ def get_word_features(wordlist):
     word_features = wordlist.keys()
     return word_features
 
-def extract_features(document):
-    word_features = get_word_features(get_words_in_tweets(document))
-
-    document_words = set(document)
+def get_extract_features(document, word_features):
     features = {}
-    for word in word_features:
-        features['contains(%s)' % word] = (word in document_words)
+    document_words = set(document)
+    for i in document:
+        document_words.add(i)
+        for word in word_features:
+            features['contains(%s)' % word] = (word in document_words)
     return features
 
 def main():
@@ -54,15 +61,59 @@ def main():
     test_list = get_test_list()
 
     tweets = []
+    test_tweets = []
+    agg_list = pos_list + neg_list
 
-    for (words, sentiment) in pos_list + neg_list:
-        filtered_words = [i.lower() for i in words.split() if len(i) >= 3]
-        tweets.append((filtered_words, sentiment))
+    tweets = downsize(agg_list, tweets)
+    test_tweets = downsize(test_list, test_tweets)
 
-    #word_features = get_word_features(get_words_in_tweets(tweets))
+    word_features = get_word_features(get_words_in_tweets(tweets))
 
-    training_set = nltk.classify.util.apply_features(extract_features(tweets))
-    print training_set
+    def extract_features(document):
+        document_words = set(document)
+        features = {}
+        for word in word_features:
+            features['contains(%s)' % word] = (word in document_words)
+        return features
+
+    #print extract_features(tweets[0][0])
+
+    training_set = nltk.classify.apply_features(extract_features, tweets)
+    test_set = nltk.classify.apply_features(extract_features, test_tweets)
+
+    classifier = nltk.NaiveBayesClassifier.train(training_set)
+    #print classifier.show_most_informative_features(100)
+    '''
+    tweet = 'This house is great'
+    #print extract_features(tweet.split())
+    sentiment = classifier.classify(extract_features(tweet.split()))
+    #print sentiment
+
+    tweet = 'Your song is annoying'
+    #print extract_features(tweet.split())
+    sentiment = classifier.classify(extract_features(tweet.split()))
+    #print sentiment
+
+    accuracy = nltk.classify.accuracy(classifier, test_set)
+    print accuracy
+    '''
+
+    inputfilename = "tweets_ready_for_use"
+    outputfilename = "chase_test"
+
+    # define columns
+    showCol = 0
+    textCol = 1
+    stateCol = 2
+
+    outputfile = open(outputfilename, 'w')
+
+    with open(inputfilename, 'r') as tweetsfile:
+        reader = csv.reader(tweetsfile, delimiter='\t')
+        for row in reader:
+            fixedText = stripNonAscii(row[textCol])
+            sentiment = classifier.classify(extract_features(fixedText.split()))
+            outputfile.write(row[showCol] + '\t' + row[stateCol] + '\t' + str(sentiment) + '\n')
 
 
 main()
