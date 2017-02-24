@@ -112,4 +112,5 @@ def tweet_analyzer(tweet_data):
 	results = [(show_name,tweet_state,show_sentiment)]
 	data = pandas.DataFrame.from_records(results,columns=config.COLUMN_LABELS)
 	print("Text:\n" + original_tweet_text + "\nScore:\n" + str(show_sentiment))
-	return data#will remove when ready to send data to database instead
+	#return data#will remove when ready to send data to database instead
+	return show_sentiment
