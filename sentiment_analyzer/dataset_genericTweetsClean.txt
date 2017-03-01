@@ -3885,14 +3885,14 @@
 1	!freebsd jails-ing make me rockers 
 -1	!mercurial-crew can't find osutil ... can't hg update to the old revision 
 -1	 a couple of very liberal people i know thought  was  stupid exploitation.
--1	"  " is tragic, but immensely well-executed, never feeling moralistic.
+-1	   is tragic, but immensely well-executed, never feeling moralistic.
 1	   series ( because of the delicious way my life is sucked away when i read it )..
-1	" i loved  and i haven't seen crash, but i still feel like people are...
+1	 i loved  and i haven't seen crash, but i still feel like people are...
 1	   was awesome and if you didn't see it because of some problem you have with tom cruise then stop pretending as though you actually like moives.
 -1	  sucks like a theatan energy field!
-4291,0,kaggle, or that awful " goth twist on  " the " shattered-spine emo-mound of cow shit.
+4291,0,kaggle, or that awful  goth twist on  " the " shattered-spine emo-mound of cow shit.
 1	   is awesome though.
--1	" thinking back to my comment to anax, i decided to write a really awful  fanfic, rife with faked mary sue-ism...
+-1	 thinking back to my comment to anax, i decided to write a really awful  fanfic, rife with faked mary sue-ism...
 -1	# @rockchic65 aw, poor you  hope it's not oinkflu! ;)
 1	# 1 perk when working for the pga: free tickets to one of the most famous golf tournaments in the world 
 -1	# about to head back to work - the holidays over 
@@ -4783,8 +4783,8 @@
 1	!you can touch this!.... party time... 
 -1	  sucks.
 5183,0,kaggle, i hate .
--1	"  iii " sucks, the story of " x-men:
--1	" my favorite attraction reopened on friday, but due to the stupid  release i was unable to be there until saturday.
+-1	  iii " sucks, the story of " x-men:
+-1	 my favorite attraction reopened on friday, but due to the stupid  release i was unable to be there until saturday.
 -1	# do not use twitter's mean is you don't know yet what the twitter is. why many people use this? is it interesting? i'm a newbie. 
 -1	# help #  anyone tell me abt box model ! what is boxmodel ? why ,where use in &quot;html&quot; ? 
 -1	# iv got the flu  i hate being sick#
@@ -5766,3 +5766,4 @@
 -1	 say some tehilim.
 -1	 school...those ants are still by the window...wtf...
 -1	
+

@@ -9,8 +9,10 @@ import sentiment_analyzer_lib.settings as settings
 sentCol = 0
 textCol = 1
 
+trainingFilename = "dataset_michTweetsClean.txt"
+
 # Read in the training data.
-with open("trainhalf.txt", 'r') as file:
+with open(trainingFilename, 'r') as file:
   reviews = list(csv.reader(file, delimiter = '\t'))
 
 def get_text(reviews, score):
@@ -79,12 +81,20 @@ def make_decision(text, make_class_prediction):
 		#print "Case 1"
 		#print("neg_prob = " + str(neg_prob))
 		#print("pos_prob = " + str(pos_prob))
-		compScore = (neg_prob - pos_prob) / float(neg_prob + pos_prob)
-		compScore = -1.0*round(compScore, 3)
+		try:
+			compScore = (neg_prob - pos_prob) / float(neg_prob + pos_prob)
+			compScore = -1.0*round(compScore, 3)
+		except ZeroDivisionError as detail:
+			print "Error computing compScore, val set to 0", detail
+			compScore = 0
 		return [-1, compScore]
 	else:
-		compScore = (pos_prob - neg_prob) / float(neg_prob + pos_prob)
-		compScore = round(compScore, 3)
+		try:
+			compScore = (pos_prob - neg_prob) / float(neg_prob + pos_prob)
+			compScore = round(compScore, 3)
+		except ZeroDivisionError as detail:
+                        print "Error computing compScore, val set to 0", detail
+                        compScore = 0
 		return [1, compScore]
 
 def stripNonAscii(string):
@@ -100,13 +110,13 @@ def stripNonAscii(string):
 #print("Positive prediction: {0}".format(make_class_prediction(testText, positive_counts, prob_positive, positive_review_count)))
 
 #specify the names of the input file to be processed and the output file to be produced.
-inputfilename = "testhalf.txt"
-outputfilename = "nbScoresWithText.txt"
+inputfilename = "tweets_ready_for_use_final"
+outputfilename = "nbScores.txt"
 
 outputfile = open(outputfilename, 'w')
 
 #loop through each tweet in the input file, get a score for it, and then
-#create an output file in the format of <show_name> <state> <sentimentScore> , table delimited
+#create an output file in the format of <show_name> <state> <sentimentScore> , tab delimited
 with open(inputfilename, 'r') as tweetsfile:
         reader = csv.reader(tweetsfile, delimiter = '\t')
         for row in reader:
@@ -117,8 +127,8 @@ with open(inputfilename, 'r') as tweetsfile:
 		sentScoreResults = make_decision(fixedText, make_class_prediction)
 		binaryScore = sentScoreResults[0]
 		compScore = sentScoreResults[1]
-		 
-                outputfile.write(str(binaryScore) + "\t" + fixedText + '\n')
-
+		
+                #outputfile.write(str(binaryScore) + "\t" + fixedText + '\n')
+		outputfile.write(row[0] + '\t' + row[2] + '\t' + str(compScore) + '\n')
 
 outputfile.close()

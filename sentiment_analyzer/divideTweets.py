@@ -1,7 +1,7 @@
 import string
 import csv
 
-inputfilename = "trainingclean.txt"
+inputfilename = "dataset_michTweetsClean.txt"
 outputTrainFilename = "trainhalf.txt"
 outputTestFilename = "testhalf.txt"
 
@@ -14,6 +14,7 @@ with open(inputfilename, 'r') as tweetsfile:
 	traincount = 0
 	testcount = 0
 	for row in reader:
+		print "Got Here"
 		if (linecount % 3 == 0) or (linecount % 3 == 1):
 			traincount += 1
 			trainfile.write(row[0] + '\t' + row[1] + '\n')

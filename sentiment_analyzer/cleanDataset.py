@@ -25,6 +25,10 @@ outputfilename = "dataset_genericTweetsClean.txt"
 sentCol = 0
 textCol = 1
 
+#define what the dataset uses for a positive score and negative score
+oldPosScore = 1
+oldNegScore = -1
+
 #The training file is tweets about a handful of titles. The content names will be removed
 #from the tweets before word counts are formed. Below is a list of those titles.
 titleNames = ["the da vinci code",
@@ -51,9 +55,9 @@ with open(inputfilename, 'r') as tweetsfile:
 			#fixedText = re.sub(content, '', fixedText)
 			fixedText = fixedText.replace(content, "")
                 
-		if (int(row[sentCol]) == 1):
+		if (int(row[sentCol]) == oldPosScore):
                         outputfiletemp.write(str(1) + '\t' + fixedText + '\n')
-                if (int(row[sentCol]) == 0):
+                if (int(row[sentCol]) == oldNegScore):
                         outputfiletemp.write(str(-1) + '\t' + fixedText + '\n')
 outputfiletemp.close()	
 		

@@ -1,0 +1,965 @@
+big bang theory,AL,0.5628
+big bang theory,AR,-0.987
+big bang theory,AZ,-0.33761538461538476
+big bang theory,CA,-0.14627840909090903
+big bang theory,CO,-0.7698750000000001
+big bang theory,CT,-0.30783333333333335
+big bang theory,DC,-0.1408333333333334
+big bang theory,FL,-0.30502777777777773
+big bang theory,GA,-0.17421739130434788
+big bang theory,HI,0.0025000000000000022
+big bang theory,IA,0.31333333333333335
+big bang theory,ID,-0.39614285714285724
+big bang theory,IL,-0.31106451612903235
+big bang theory,IN,0.45088571428571433
+big bang theory,KS,-0.7003333333333334
+big bang theory,KY,-0.202
+big bang theory,LA,0.4215555555555556
+big bang theory,MA,0.1855
+big bang theory,MD,-0.05840740740740734
+big bang theory,ME,0.3883333333333333
+big bang theory,MI,0.3244615384615384
+big bang theory,MN,-0.39916666666666667
+big bang theory,MO,-0.16316666666666665
+big bang theory,MS,-0.6378571428571428
+big bang theory,NC,-0.23610000000000003
+big bang theory,NE,0.25849999999999995
+big bang theory,NH,0.786
+big bang theory,NJ,0.09844444444444447
+big bang theory,NM,0.22633333333333336
+big bang theory,NV,-0.34573684210526306
+big bang theory,NY,-0.25726666666666653
+big bang theory,OH,-0.3415
+big bang theory,OK,0.17179999999999992
+big bang theory,OR,-0.49108333333333337
+big bang theory,PA,-0.37924137931034485
+big bang theory,RI,-0.975
+big bang theory,SC,-0.6014
+big bang theory,SD,0.967
+big bang theory,TN,-0.5033999999999998
+big bang theory,TX,-0.03986046511627909
+big bang theory,UT,-0.5007142857142858
+big bang theory,VA,-0.2872727272727273
+big bang theory,VT,0.0575
+big bang theory,WA,-0.006449999999999956
+big bang theory,WI,0.3777777777777778
+big bang theory,WV,0.931
+breaking bad,AK,0.32175
+breaking bad,AL,-0.43570588235294117
+breaking bad,AR,0.43162500000000004
+breaking bad,AZ,0.10110714285714288
+breaking bad,CA,-0.20165336134453724
+breaking bad,CO,-0.05559090909090913
+breaking bad,CT,0.49249999999999994
+breaking bad,DC,0.6367826086956522
+breaking bad,DE,0.48230000000000006
+breaking bad,FL,-0.18770588235294117
+breaking bad,GA,-0.09521875000000002
+breaking bad,HI,-0.6836
+breaking bad,IA,-0.1871875
+breaking bad,ID,-0.7548571428571428
+breaking bad,IL,-0.0788235294117647
+breaking bad,IN,0.07574468085106383
+breaking bad,KS,-0.32936363636363625
+breaking bad,KY,0.13567857142857145
+breaking bad,LA,-0.1257142857142857
+breaking bad,MA,0.4032432432432433
+breaking bad,MD,0.10349999999999998
+breaking bad,ME,-0.5075333333333333
+breaking bad,MI,-0.08711764705882358
+breaking bad,MN,0.13540740740740737
+breaking bad,MO,-0.07643333333333333
+breaking bad,MS,0.330625
+breaking bad,MT,0.4053333333333333
+breaking bad,NC,-0.02363829787234043
+breaking bad,ND,-0.2931111111111112
+breaking bad,NE,-0.294
+breaking bad,NH,-0.0368
+breaking bad,NJ,0.15015151515151515
+breaking bad,NM,-0.4745263157894737
+breaking bad,NV,-6.470588235294059E-4
+breaking bad,NY,-0.0891357142857143
+breaking bad,OH,-0.05439999999999997
+breaking bad,OK,0.06384374999999998
+breaking bad,OR,0.24976315789473694
+breaking bad,PA,0.030303797468354467
+breaking bad,RI,-0.3311428571428571
+breaking bad,SC,-0.21879999999999997
+breaking bad,SD,0.9863333333333334
+breaking bad,TN,0.10949999999999993
+breaking bad,TX,-0.15297879858657232
+breaking bad,UT,0.10914814814814815
+breaking bad,VA,0.12307692307692311
+breaking bad,VT,-0.596
+breaking bad,WA,-0.17251923076923073
+breaking bad,WI,-0.04253846153846148
+breaking bad,WV,0.46342857142857136
+daily show,AK,-0.1563333333333333
+daily show,AL,-0.07300000000000002
+daily show,AR,0.42766666666666664
+daily show,AZ,-0.06545000000000001
+daily show,CA,-0.06381944444444446
+daily show,CO,-0.23100000000000007
+daily show,CT,-0.4847
+daily show,DC,-0.32760416666666664
+daily show,FL,-0.14932530120481924
+daily show,GA,0.150725
+daily show,HI,0.10014285714285717
+daily show,IA,0.06287499999999999
+daily show,ID,-0.4807272727272727
+daily show,IL,-0.09454166666666663
+daily show,IN,0.12633333333333333
+daily show,KS,-0.4226153846153845
+daily show,KY,-0.3691599999999999
+daily show,LA,-0.31952941176470584
+daily show,MA,-0.16240983606557377
+daily show,MD,0.0372592592592593
+daily show,ME,-0.40914285714285714
+daily show,MI,-0.0684054054054054
+daily show,MN,-0.20707407407407402
+daily show,MO,-0.05100000000000001
+daily show,MS,0.8930000000000001
+daily show,MT,0.47285714285714286
+daily show,NC,-0.2531764705882353
+daily show,ND,0.16300000000000003
+daily show,NE,0.2427142857142857
+daily show,NH,0.957
+daily show,NJ,-0.06914999999999999
+daily show,NM,-0.37266666666666665
+daily show,NV,-0.24812500000000004
+daily show,NY,-0.03796551724137929
+daily show,OH,-0.21372500000000003
+daily show,OK,-0.32708333333333334
+daily show,OR,7.380952380952414E-4
+daily show,PA,0.25956000000000007
+daily show,RI,0.927
+daily show,SC,0.07912500000000001
+daily show,SD,0.4653333333333333
+daily show,TN,-0.3066999999999999
+daily show,TX,-0.028056603773584904
+daily show,UT,0.24830000000000002
+daily show,VA,0.04018181818181817
+daily show,VT,-0.21200000000000002
+daily show,WA,-0.13819148936170214
+daily show,WI,-0.20048148148148148
+daily show,WV,0.805
+fox and friends,AK,-0.1156666666666667
+fox and friends,AL,-0.14650000000000002
+fox and friends,AR,-0.305
+fox and friends,AZ,-0.16092307692307697
+fox and friends,CA,-0.31173404255319126
+fox and friends,CO,-0.16457142857142854
+fox and friends,DC,0.6066250000000001
+fox and friends,DE,-0.305
+fox and friends,FL,-0.3301249999999998
+fox and friends,GA,-0.3583125
+fox and friends,HI,-0.305
+fox and friends,IA,0.347
+fox and friends,IL,-0.15050000000000005
+fox and friends,IN,-0.2151538461538462
+fox and friends,KS,0.627
+fox and friends,KY,-0.4206666666666667
+fox and friends,LA,-0.0982
+fox and friends,MA,-0.2838
+fox and friends,MD,0.16953846153846147
+fox and friends,ME,-0.305
+fox and friends,MI,-0.3144782608695652
+fox and friends,MN,-0.1264
+fox and friends,MO,-0.429
+fox and friends,MS,-0.305
+fox and friends,MT,-0.37274999999999997
+fox and friends,NC,-0.1605294117647059
+fox and friends,ND,-0.2925
+fox and friends,NE,-0.999
+fox and friends,NH,-0.999
+fox and friends,NJ,0.029615384615384634
+fox and friends,NM,-0.305
+fox and friends,NV,-0.2926153846153846
+fox and friends,NY,-0.36954761904761896
+fox and friends,OH,-0.5306399999999999
+fox and friends,OK,-0.16688888888888886
+fox and friends,OR,-0.38549999999999995
+fox and friends,PA,0.09109375
+fox and friends,RI,-0.305
+fox and friends,SC,-0.305
+fox and friends,TN,-0.018555555555555533
+fox and friends,TX,-0.26259154929577444
+fox and friends,UT,-0.1046
+fox and friends,VA,0.13636363636363635
+fox and friends,VT,0.139
+fox and friends,WA,-0.22036363636363632
+fox and friends,WI,-0.20566666666666666
+fox and friends,WV,-0.23440000000000003
+fox and friends,WY,-0.305
+games of thrones,AR,-0.921
+games of thrones,CA,-0.391
+games of thrones,DC,-0.926
+games of thrones,FL,-0.6356363636363637
+games of thrones,GA,-0.97
+games of thrones,IA,-0.921
+games of thrones,ID,0.20439999999999997
+games of thrones,IL,-0.4343333333333333
+games of thrones,KY,0.009499999999999953
+games of thrones,LA,0.034
+games of thrones,MD,-0.9550000000000001
+games of thrones,ME,-0.997
+games of thrones,MI,-0.12499999999999997
+games of thrones,NH,-0.677
+games of thrones,NV,-0.7375
+games of thrones,NY,0.023749999999999993
+games of thrones,OH,-0.902
+games of thrones,OR,-0.921
+games of thrones,PA,-0.921
+games of thrones,TX,-0.2846666666666667
+games of thrones,UT,-0.7592000000000001
+games of thrones,WA,-0.921
+games of thrones,WI,-0.9210000000000002
+hidden figures,AK,-0.14425000000000002
+hidden figures,AL,-0.11926
+hidden figures,AR,-0.012999999999999992
+hidden figures,AZ,-0.09647368421052632
+hidden figures,CA,-0.20492688971499357
+hidden figures,CO,-0.12773999999999996
+hidden figures,CT,-0.2441923076923077
+hidden figures,DC,-0.195523178807947
+hidden figures,DE,-0.20138461538461538
+hidden figures,FL,-0.1355703125000001
+hidden figures,GA,-0.30973800738007323
+hidden figures,HI,-0.5654545454545455
+hidden figures,IA,-0.15270270270270273
+hidden figures,ID,-0.10716666666666665
+hidden figures,IL,-0.20170526315789472
+hidden figures,IN,0.019625000000000004
+hidden figures,KS,0.2580000000000001
+hidden figures,KY,0.006058823529411761
+hidden figures,LA,-0.1891976744186046
+hidden figures,MA,-0.14083529411764714
+hidden figures,MD,-0.17961983471074375
+hidden figures,ME,-0.29913333333333336
+hidden figures,MI,-0.11008264462809926
+hidden figures,MN,-0.2749259259259259
+hidden figures,MO,-0.15561643835616437
+hidden figures,MS,-0.4025172413793104
+hidden figures,MT,-0.05257142857142859
+hidden figures,NC,-0.15322
+hidden figures,ND,0.718
+hidden figures,NE,-0.1322857142857143
+hidden figures,NH,-0.652
+hidden figures,NJ,-0.22775555555555557
+hidden figures,NM,-0.35723076923076924
+hidden figures,NV,-0.1395769230769231
+hidden figures,NY,-0.18195223880597022
+hidden figures,OH,-0.16580000000000006
+hidden figures,OK,-0.2084090909090909
+hidden figures,OR,-0.050459016393442635
+hidden figures,PA,-0.26547154471544715
+hidden figures,RI,-0.019749999999999976
+hidden figures,SC,-0.3860000000000001
+hidden figures,SD,-0.8903333333333334
+hidden figures,TN,-0.2627272727272727
+hidden figures,TX,-0.13860156250000008
+hidden figures,UT,-0.08633333333333339
+hidden figures,VA,-0.20210778443113783
+hidden figures,VT,-0.23157142857142857
+hidden figures,WA,-0.05616842105263158
+hidden figures,WI,-0.2126875
+hidden figures,WV,0.004230769230769203
+hidden figures,WY,-0.27475000000000005
+how to get away with murder,AL,-0.2080645161290323
+how to get away with murder,AR,-0.35487500000000005
+how to get away with murder,AZ,0.06115384615384612
+how to get away with murder,CA,-0.14163235294117651
+how to get away with murder,CO,0.22744444444444445
+how to get away with murder,CT,-0.549125
+how to get away with murder,DC,-0.24180952380952378
+how to get away with murder,DE,0.3226666666666667
+how to get away with murder,FL,-0.2119583333333334
+how to get away with murder,GA,-0.061246153846153874
+how to get away with murder,HI,-0.7973333333333333
+how to get away with murder,IA,-0.3594
+how to get away with murder,ID,-0.6698000000000001
+how to get away with murder,IL,-0.19934210526315788
+how to get away with murder,IN,-0.15675
+how to get away with murder,KS,-0.1420714285714286
+how to get away with murder,KY,-0.3411666666666667
+how to get away with murder,LA,-0.1065
+how to get away with murder,MA,0.2388181818181818
+how to get away with murder,MD,-0.27355999999999997
+how to get away with murder,ME,-0.5641666666666666
+how to get away with murder,MI,-0.24675609756097566
+how to get away with murder,MN,0.32649999999999996
+how to get away with murder,MO,-0.029315789473684226
+how to get away with murder,MS,-0.3028235294117647
+how to get away with murder,MT,-0.968
+how to get away with murder,NC,-0.10581081081081081
+how to get away with murder,NE,0.4452
+how to get away with murder,NH,0.975
+how to get away with murder,NJ,-0.31383333333333335
+how to get away with murder,NM,1.0
+how to get away with murder,NV,-0.1132
+how to get away with murder,NY,-0.25035454545454555
+how to get away with murder,OH,-0.10627659574468087
+how to get away with murder,OK,0.34455555555555556
+how to get away with murder,OR,0.3461111111111111
+how to get away with murder,PA,-0.3448965517241379
+how to get away with murder,RI,-0.4033333333333333
+how to get away with murder,SC,-0.040125000000000036
+how to get away with murder,SD,-0.676
+how to get away with murder,TN,0.049888888888888885
+how to get away with murder,TX,-0.03438461538461543
+how to get away with murder,UT,-0.5626363636363636
+how to get away with murder,VA,0.044354838709677435
+how to get away with murder,VT,-0.993
+how to get away with murder,WA,-0.12406451612903227
+how to get away with murder,WI,-0.4811875000000001
+how to get away with murder,WV,-0.4895
+la la land,AK,0.4501428571428572
+la la land,AL,-0.10588372093023261
+la la land,AR,-0.15263043478260863
+la la land,AZ,-0.03969736842105265
+la la land,CA,-0.028163558663558474
+la la land,CO,0.06796969696969697
+la la land,CT,-0.1554883720930233
+la la land,DC,-0.17515151515151486
+la la land,DE,-0.4800714285714286
+la la land,FL,-0.08447452692867545
+la la land,GA,-0.13218508287292802
+la la land,HI,0.19025641025641024
+la la land,IA,0.0353090909090909
+la la land,ID,-0.039487804878048795
+la la land,IL,-0.08332533333333325
+la la land,IN,-0.01879605263157893
+la la land,KS,-0.12336486486486488
+la la land,KY,-0.022597222222222248
+la la land,LA,-0.12526369863013687
+la la land,MA,-0.026904306220095656
+la la land,MD,-0.048768844221105424
+la la land,ME,-0.22324999999999995
+la la land,MI,-0.02417283950617283
+la la land,MN,-0.09672839506172828
+la la land,MO,-0.14112
+la la land,MS,-0.05427272727272729
+la la land,MT,-0.1849473684210526
+la la land,NC,-0.13925764192139725
+la la land,ND,0.629857142857143
+la la land,NE,-0.18424324324324326
+la la land,NH,-0.008222222222222205
+la la land,NJ,-0.04252409638554215
+la la land,NM,0.2550681818181818
+la la land,NV,-0.19080158730158728
+la la land,NY,-0.03527777777777772
+la la land,OH,-0.01819174757281549
+la la land,OK,0.1140409836065574
+la la land,OR,0.01095238095238097
+la la land,PA,-0.045234432234432236
+la la land,RI,0.11071428571428572
+la la land,SC,-0.07558510638297868
+la la land,SD,-0.6226
+la la land,TN,0.05017224880382776
+la la land,TX,-0.06034724409448813
+la la land,UT,-0.07194059405940592
+la la land,VA,-0.004138655462184882
+la la land,VT,-0.5402999999999999
+la la land,WA,0.025599999999999984
+la la land,WI,-0.16035955056179776
+la la land,WV,-0.32104545454545447
+la la land,WY,0.31899999999999995
+law and order svu,AK,-0.654
+law and order svu,AL,-0.4286666666666667
+law and order svu,AR,0.48
+law and order svu,AZ,0.40359999999999996
+law and order svu,CA,0.052760869565217354
+law and order svu,CO,0.999
+law and order svu,CT,-0.26533333333333337
+law and order svu,DC,-0.13744444444444442
+law and order svu,FL,0.13535000000000003
+law and order svu,GA,-0.2631
+law and order svu,IA,0.009600000000000008
+law and order svu,IL,0.3124705882352941
+law and order svu,IN,-0.875
+law and order svu,KS,0.043400000000000015
+law and order svu,KY,-0.355
+law and order svu,LA,-0.043833333333333335
+law and order svu,MA,0.010000000000000009
+law and order svu,MD,-0.34625
+law and order svu,ME,-0.529
+law and order svu,MI,0.5266363636363636
+law and order svu,MN,0.12914285714285714
+law and order svu,MO,-0.7543333333333333
+law and order svu,NC,0.078
+law and order svu,NE,-0.9884999999999999
+law and order svu,NJ,-0.839
+law and order svu,NM,-0.05
+law and order svu,NV,-0.1403333333333333
+law and order svu,NY,0.11172727272727274
+law and order svu,OH,-0.3568095238095238
+law and order svu,OK,0.3516666666666666
+law and order svu,OR,-0.856
+law and order svu,PA,0.06381818181818184
+law and order svu,SC,0.05149999999999999
+law and order svu,SD,0.999
+law and order svu,TN,-0.46054545454545454
+law and order svu,TX,0.004886792452830154
+law and order svu,UT,0.21200000000000002
+law and order svu,VA,-0.16800000000000004
+law and order svu,WA,0.0529
+law and order svu,WI,-0.21428571428571427
+law and order svu,WV,-0.3405
+manchester by the sea,AK,0.034
+manchester by the sea,AL,-0.999
+manchester by the sea,AR,0.206
+manchester by the sea,AZ,0.07857142857142858
+manchester by the sea,CA,-0.12032876712328766
+manchester by the sea,CO,-0.75
+manchester by the sea,CT,0.10666666666666667
+manchester by the sea,DC,-0.14726666666666668
+manchester by the sea,DE,0.0018000000000000156
+manchester by the sea,FL,-0.38465789473684214
+manchester by the sea,GA,-0.10610526315789474
+manchester by the sea,HI,0.6075
+manchester by the sea,IA,-0.475125
+manchester by the sea,ID,0.08699999999999997
+manchester by the sea,IL,-0.1384347826086957
+manchester by the sea,IN,-0.3153333333333333
+manchester by the sea,KS,-0.30000000000000004
+manchester by the sea,KY,0.18560000000000004
+manchester by the sea,LA,-0.10794117647058823
+manchester by the sea,MA,0.06639393939393942
+manchester by the sea,MD,-0.24275000000000002
+manchester by the sea,ME,-0.39849999999999997
+manchester by the sea,MI,-0.0011666666666666607
+manchester by the sea,MN,-0.33390909090909093
+manchester by the sea,MO,-0.1347692307692308
+manchester by the sea,MS,-0.76275
+manchester by the sea,MT,-0.999
+manchester by the sea,NC,-0.05975
+manchester by the sea,NE,-0.5640000000000001
+manchester by the sea,NJ,-0.19119999999999998
+manchester by the sea,NM,0.582
+manchester by the sea,NV,-0.6121666666666666
+manchester by the sea,NY,-0.1649275362318841
+manchester by the sea,OH,0.04643333333333337
+manchester by the sea,OK,0.1664
+manchester by the sea,OR,-0.482125
+manchester by the sea,PA,-0.17778260869565218
+manchester by the sea,RI,0.3442
+manchester by the sea,SC,-0.6213333333333333
+manchester by the sea,TN,-0.3688
+manchester by the sea,TX,-0.03263492063492065
+manchester by the sea,UT,0.34485714285714286
+manchester by the sea,VA,-0.19099999999999998
+manchester by the sea,VT,0.034
+manchester by the sea,WA,0.09799999999999999
+manchester by the sea,WI,-0.35357142857142865
+manchester by the sea,WY,0.02466666666666667
+modern family,AK,0.04625000000000001
+modern family,AL,-0.6893846153846154
+modern family,AR,-0.6608571428571428
+modern family,AZ,-0.073375
+modern family,CA,-0.07663709677419353
+modern family,CO,0.1910833333333333
+modern family,CT,0.14262500000000003
+modern family,DC,-0.492
+modern family,DE,-0.5964999999999999
+modern family,FL,-0.35414634146341456
+modern family,GA,0.004307692307692328
+modern family,HI,-0.764
+modern family,IA,-0.5946250000000001
+modern family,ID,-0.7709999999999999
+modern family,IL,-0.13284
+modern family,IN,-0.1364545454545455
+modern family,KS,-9.999999999999638E-4
+modern family,KY,-0.20161111111111113
+modern family,LA,-0.2977857142857143
+modern family,MA,-0.07175000000000001
+modern family,MD,-0.2676
+modern family,ME,-0.5771999999999999
+modern family,MI,-0.7603846153846155
+modern family,MN,-0.29059999999999997
+modern family,MO,0.06966666666666664
+modern family,MS,-0.1534
+modern family,NC,-0.28635
+modern family,NE,0.056
+modern family,NH,0.04349999999999998
+modern family,NJ,-0.40054545454545454
+modern family,NV,0.052545454545454534
+modern family,NY,-0.3494915254237289
+modern family,OH,-0.1727058823529412
+modern family,OK,-0.23681818181818184
+modern family,OR,-0.47563636363636363
+modern family,PA,0.3861428571428572
+modern family,RI,0.07150000000000004
+modern family,SC,0.00615384615384615
+modern family,SD,-0.994
+modern family,TN,0.14596774193548392
+modern family,TX,-0.17838095238095236
+modern family,UT,-0.2890000000000001
+modern family,VA,0.009647058823529408
+modern family,WA,-0.1629
+modern family,WI,-0.5616923076923077
+modern family,WV,-0.6103333333333333
+modern family,WY,-0.833
+ncis,AK,-0.996
+ncis,AL,-0.3047
+ncis,AR,0.11540000000000003
+ncis,AZ,-0.38949999999999996
+ncis,CA,-0.17854807692307698
+ncis,CO,-0.23433333333333328
+ncis,CT,-0.16899999999999996
+ncis,DC,0.07616666666666667
+ncis,FL,0.013225806451612929
+ncis,GA,0.19825806451612907
+ncis,HI,0.23
+ncis,IA,0.617
+ncis,ID,-0.45766666666666667
+ncis,IL,-0.09531249999999998
+ncis,IN,0.001600000000000021
+ncis,KS,-0.4452666666666667
+ncis,KY,0.010444444444444416
+ncis,LA,-0.21463157894736842
+ncis,MA,0.050571428571428566
+ncis,MD,-0.2728666666666666
+ncis,ME,0.10325000000000002
+ncis,MI,0.2621818181818181
+ncis,MN,0.14537499999999998
+ncis,MO,-0.2566
+ncis,MS,-0.06437500000000002
+ncis,NC,-0.28378947368421054
+ncis,NE,-0.931
+ncis,NH,-0.999
+ncis,NJ,-0.0165
+ncis,NM,0.5255
+ncis,NV,0.34466666666666657
+ncis,NY,-0.26919999999999994
+ncis,OH,-0.07513793103448277
+ncis,OK,-0.27466666666666667
+ncis,OR,-0.7702857142857144
+ncis,PA,-0.2366666666666667
+ncis,SC,0.157
+ncis,SD,-0.908
+ncis,TN,-0.3342941176470588
+ncis,TX,0.04924615384615386
+ncis,UT,-0.15342857142857147
+ncis,VA,0.1723333333333333
+ncis,WA,-0.27655555555555555
+ncis,WI,0.032941176470588265
+ncis,WV,-0.458
+o'reilly factor,AL,0.05949999999999997
+o'reilly factor,AR,-0.975
+o'reilly factor,AZ,0.941
+o'reilly factor,CA,0.07576666666666688
+o'reilly factor,CO,-0.29500000000000004
+o'reilly factor,CT,0.999
+o'reilly factor,DC,0.5419999999999999
+o'reilly factor,DE,-0.975
+o'reilly factor,FL,-0.36190909090909085
+o'reilly factor,GA,-0.987
+o'reilly factor,HI,-0.762
+o'reilly factor,IL,0.34833333333333333
+o'reilly factor,IN,-0.28300000000000003
+o'reilly factor,KS,-0.975
+o'reilly factor,KY,-0.17700000000000002
+o'reilly factor,LA,-0.975
+o'reilly factor,MA,-0.5035714285714287
+o'reilly factor,MD,0.6749999999999999
+o'reilly factor,MI,-0.3034
+o'reilly factor,MN,-0.28300000000000003
+o'reilly factor,MO,-0.28300000000000003
+o'reilly factor,MS,-0.975
+o'reilly factor,MT,-0.975
+o'reilly factor,NC,-0.039
+o'reilly factor,NJ,0.31733333333333336
+o'reilly factor,NM,0.12499999999999996
+o'reilly factor,NV,-0.47450000000000003
+o'reilly factor,NY,-0.06364705882352938
+o'reilly factor,OH,-0.6982
+o'reilly factor,OK,-0.975
+o'reilly factor,OR,0.13825
+o'reilly factor,PA,0.12049999999999998
+o'reilly factor,SC,0.299
+o'reilly factor,TN,-0.28300000000000003
+o'reilly factor,TX,-0.13997058823529412
+o'reilly factor,VA,-0.18437499999999998
+o'reilly factor,WA,-0.28300000000000003
+pretty little liars,AK,-0.9075
+pretty little liars,AL,-0.382
+pretty little liars,AR,0.1410769230769231
+pretty little liars,AZ,-0.7297499999999999
+pretty little liars,CA,0.03044000000000006
+pretty little liars,CO,-0.6639999999999999
+pretty little liars,CT,-0.8896666666666667
+pretty little liars,DC,-0.04057142857142858
+pretty little liars,DE,-0.643
+pretty little liars,FL,-0.09921621621621622
+pretty little liars,GA,0.20866666666666664
+pretty little liars,HI,-0.7633333333333333
+pretty little liars,IA,0.007
+pretty little liars,IL,0.12058536585365853
+pretty little liars,IN,-0.27031578947368423
+pretty little liars,KS,-0.705
+pretty little liars,KY,-0.12675
+pretty little liars,LA,0.06933333333333332
+pretty little liars,MA,-0.27249999999999996
+pretty little liars,MD,-0.35193749999999996
+pretty little liars,ME,-0.24838461538461554
+pretty little liars,MI,0.008426086956521719
+pretty little liars,MN,0.2686
+pretty little liars,MO,0.21221428571428574
+pretty little liars,MS,0.39585714285714285
+pretty little liars,NC,-0.30914285714285716
+pretty little liars,NE,-0.27799999999999997
+pretty little liars,NH,-0.082
+pretty little liars,NJ,0.32673913043478264
+pretty little liars,NV,-0.5737000000000001
+pretty little liars,NY,-0.2710526315789474
+pretty little liars,OH,-0.08163636363636363
+pretty little liars,OK,-0.30866666666666664
+pretty little liars,OR,-0.002800000000000019
+pretty little liars,PA,-0.0916888888888889
+pretty little liars,SC,-0.06253333333333333
+pretty little liars,SD,-0.964
+pretty little liars,TN,0.36650000000000005
+pretty little liars,TX,0.06450724637681159
+pretty little liars,UT,0.0059999999999999845
+pretty little liars,VA,-0.4859999999999999
+pretty little liars,WA,0.001090909090909098
+pretty little liars,WI,0.22687499999999994
+pretty little liars,WV,-0.996
+pretty little liars,WY,-0.111
+simpsons,AK,0.04216279069767441
+simpsons,AL,0.0015562499999999487
+simpsons,AR,-0.34570909090909085
+simpsons,AZ,-0.24579148936170225
+simpsons,CA,-0.1739633877370965
+simpsons,CO,-0.2242936507936505
+simpsons,CT,-0.4196615384615387
+simpsons,DC,-0.10060396039603967
+simpsons,DE,-0.2861538461538462
+simpsons,FL,-0.2288274547187803
+simpsons,GA,-0.09901836734693895
+simpsons,HI,-0.05811940298507463
+simpsons,IA,-0.4930869565217397
+simpsons,ID,0.07004999999999997
+simpsons,IL,-0.1688868501529056
+simpsons,IN,-0.34128400000000036
+simpsons,KS,-0.17908791208791217
+simpsons,KY,-0.21061864406779632
+simpsons,LA,-0.1983212851405623
+simpsons,MA,-0.33994249201277943
+simpsons,MD,-0.1689673590504453
+simpsons,ME,-0.15193617021276604
+simpsons,MI,-0.35547408829174776
+simpsons,MN,-0.3723005464480879
+simpsons,MO,-0.4012042253521128
+simpsons,MS,-0.10575000000000001
+simpsons,MT,-0.5101111111111112
+simpsons,NC,-0.17433068783068803
+simpsons,ND,-0.48066666666666674
+simpsons,NE,-0.2770540540540539
+simpsons,NH,-0.485346153846154
+simpsons,NJ,-0.09136704119850173
+simpsons,NM,-0.019166666666666714
+simpsons,NV,-0.07086046511627911
+simpsons,NY,-0.30315500000000034
+simpsons,OH,-0.3592226562500004
+simpsons,OK,-0.36952336448598133
+simpsons,OR,-0.3620547945205483
+simpsons,PA,-0.31103132530120514
+simpsons,RI,-0.12236000000000002
+simpsons,SC,-0.15136231884057955
+simpsons,SD,-0.37266666666666687
+simpsons,TN,-0.19422177419354855
+simpsons,TX,-0.08042471042471064
+simpsons,UT,-0.2303833333333334
+simpsons,VA,-0.20527906976744212
+simpsons,VT,-0.35088888888888886
+simpsons,WA,-0.2846972789115652
+simpsons,WI,-0.43044247787610607
+simpsons,WV,-0.521333333333333
+simpsons,WY,-0.44270000000000004
+sneaky pete,AL,-0.991
+sneaky pete,AR,0.318
+sneaky pete,AZ,0.47866666666666663
+sneaky pete,CA,0.28638888888888897
+sneaky pete,CO,0.692
+sneaky pete,CT,0.503
+sneaky pete,DC,-0.7215
+sneaky pete,FL,0.09000000000000002
+sneaky pete,GA,0.29974999999999996
+sneaky pete,IA,-0.383
+sneaky pete,ID,-0.982
+sneaky pete,IL,0.51
+sneaky pete,KS,0.89
+sneaky pete,KY,-0.388
+sneaky pete,LA,0.999
+sneaky pete,MA,-0.0017999999999999794
+sneaky pete,MD,-0.996
+sneaky pete,ME,-0.992
+sneaky pete,MI,-0.09059999999999997
+sneaky pete,MN,0.312
+sneaky pete,MO,0.7929999999999999
+sneaky pete,MS,0.999
+sneaky pete,NC,0.3193333333333333
+sneaky pete,NE,-0.25866666666666666
+sneaky pete,NJ,0.5
+sneaky pete,NV,0.09100000000000001
+sneaky pete,NY,0.03599999999999999
+sneaky pete,OH,0.2985
+sneaky pete,OK,-0.08
+sneaky pete,OR,-0.034999999999999996
+sneaky pete,PA,0.3852222222222222
+sneaky pete,SC,-0.08
+sneaky pete,SD,0.9603333333333334
+sneaky pete,TN,0.0805
+sneaky pete,TX,-0.06894117647058824
+sneaky pete,VT,-0.935
+sneaky pete,WA,0.6968
+sneaky pete,WI,-0.703
+sneaky pete,WV,0.999
+stranger things,AK,-0.05839622641509434
+stranger things,AL,-0.3396599999999998
+stranger things,AR,-0.26036190476190463
+stranger things,AZ,-0.20254734848484912
+stranger things,CA,-0.2198339258506885
+stranger things,CO,-0.23787373737373724
+stranger things,CT,-0.20718181818181794
+stranger things,DC,-0.1115031847133758
+stranger things,DE,-0.12020000000000002
+stranger things,FL,-0.2913221052631594
+stranger things,GA,-0.2369685157421294
+stranger things,HI,-0.2612222222222223
+stranger things,IA,0.029087301587301575
+stranger things,ID,-0.055298245614035096
+stranger things,IL,-0.2168499353169467
+stranger things,IN,-0.0776268656716417
+stranger things,KS,-0.21750967741935415
+stranger things,KY,-0.15046441947565534
+stranger things,LA,-0.3065102505694762
+stranger things,MA,-0.22845580110497227
+stranger things,MD,-0.2273915857605176
+stranger things,ME,-0.16867407407407398
+stranger things,MI,-0.19332818532818533
+stranger things,MN,-0.19616894977168922
+stranger things,MO,-0.18784792626728083
+stranger things,MS,-0.2836216216216212
+stranger things,MT,-0.08488888888888886
+stranger things,NC,-0.2627761806981527
+stranger things,ND,-0.44113636363636366
+stranger things,NE,0.04513636363636367
+stranger things,NH,-0.18350000000000005
+stranger things,NJ,-0.19925813953488442
+stranger things,NM,-0.0649041095890411
+stranger things,NV,-0.32154681647940064
+stranger things,NY,-0.18344891391793983
+stranger things,OH,-0.1553063063063071
+stranger things,OK,-0.1821847389558233
+stranger things,OR,-0.24365346534653484
+stranger things,PA,-0.16558766233766317
+stranger things,RI,-0.03220408163265305
+stranger things,SC,-0.1786242774566473
+stranger things,SD,0.08744444444444444
+stranger things,TN,-0.20000943396226406
+stranger things,TX,-0.29637655860349876
+stranger things,UT,-0.27183124999999986
+stranger things,VA,-0.1520363636363637
+stranger things,VT,-0.23264999999999994
+stranger things,WA,-0.23820876826722384
+stranger things,WI,-0.09378285714285715
+stranger things,WV,-0.21653846153846157
+stranger things,WY,-0.08525
+the bachelor,AK,-0.15230769230769228
+the bachelor,AL,0.060239999999999974
+the bachelor,AR,-0.06502000000000001
+the bachelor,AZ,0.06402000000000001
+the bachelor,CA,-0.010783414634146301
+the bachelor,CO,-0.05123275862068965
+the bachelor,CT,-0.332
+the bachelor,DC,-0.09495061728395063
+the bachelor,DE,-0.5975714285714285
+the bachelor,FL,-0.033246334310850466
+the bachelor,GA,-0.16120652173913036
+the bachelor,HI,0.16668181818181824
+the bachelor,IA,-0.20189898989898983
+the bachelor,ID,-0.027869565217391323
+the bachelor,IL,-0.06872695035460995
+the bachelor,IN,-0.07214814814814814
+the bachelor,KS,-0.015950819672131123
+the bachelor,KY,0.10116129032258062
+the bachelor,LA,0.005575221238938038
+the bachelor,MA,0.056838383838383764
+the bachelor,MD,-0.28142168674698786
+the bachelor,ME,0.32006249999999997
+the bachelor,MI,0.007415384615384631
+the bachelor,MN,-0.09690517241379312
+the bachelor,MO,-0.1442530120481928
+the bachelor,MS,-0.013052631578947363
+the bachelor,MT,-0.36377777777777776
+the bachelor,NC,0.03462499999999997
+the bachelor,ND,0.08233333333333331
+the bachelor,NE,-0.13282978723404257
+the bachelor,NH,-0.5106666666666667
+the bachelor,NJ,-0.06116901408450702
+the bachelor,NM,-0.22466666666666665
+the bachelor,NV,-0.19465346534653463
+the bachelor,NY,-0.17697979797979796
+the bachelor,OH,-0.058626728110599095
+the bachelor,OK,-0.11072868217054262
+the bachelor,OR,-0.19010191082802547
+the bachelor,PA,-0.16865142857142854
+the bachelor,RI,-0.4577142857142857
+the bachelor,SC,-0.0768727272727273
+the bachelor,SD,-0.14722727272727273
+the bachelor,TN,-0.05552287581699347
+the bachelor,TX,-0.06736016949152573
+the bachelor,UT,0.0010531914893617102
+the bachelor,VA,0.023317073170731697
+the bachelor,VT,0.15570000000000003
+the bachelor,WA,-0.15589908256880747
+the bachelor,WI,-0.2394852941176471
+the bachelor,WV,0.20311111111111116
+the bachelor,WY,0.26709090909090916
+tonight show,AK,0.958
+tonight show,AL,0.07207142857142856
+tonight show,AR,0.28559999999999997
+tonight show,AZ,0.36819999999999997
+tonight show,CA,0.1186648044692737
+tonight show,CO,0.155125
+tonight show,CT,0.25500000000000006
+tonight show,DC,0.5235384615384615
+tonight show,DE,0.8946666666666667
+tonight show,FL,0.236695652173913
+tonight show,GA,0.29557692307692307
+tonight show,HI,0.37033333333333335
+tonight show,IA,0.43374999999999997
+tonight show,ID,0.23033333333333333
+tonight show,IL,-0.027023255813953508
+tonight show,IN,0.2523846153846154
+tonight show,KS,0.1767777777777778
+tonight show,KY,-2.8571428571428595E-4
+tonight show,LA,0.5922142857142857
+tonight show,MA,0.3802631578947368
+tonight show,MD,0.1276
+tonight show,ME,0.04874999999999999
+tonight show,MI,0.17055172413793102
+tonight show,MN,0.4053333333333333
+tonight show,MO,0.20820000000000002
+tonight show,MS,0.05233333333333333
+tonight show,MT,0.8654999999999999
+tonight show,NC,0.12195454545454547
+tonight show,ND,0.54
+tonight show,NE,0.3035
+tonight show,NH,0.665
+tonight show,NJ,-0.2723333333333333
+tonight show,NM,0.23509090909090913
+tonight show,NV,0.24607142857142864
+tonight show,NY,0.17776923076923062
+tonight show,OH,0.2642000000000001
+tonight show,OK,0.8665
+tonight show,OR,-0.08056250000000001
+tonight show,PA,0.12040625000000002
+tonight show,SC,-0.31375000000000003
+tonight show,TN,0.4083
+tonight show,TX,0.2449999999999999
+tonight show,UT,-0.22355
+tonight show,VA,0.467
+tonight show,WA,0.32704999999999995
+tonight show,WI,0.3062307692307692
+tonight show,WV,0.40566666666666673
+tonight show,WY,-0.21949999999999997
+walking dead,AK,-0.12975510204081633
+walking dead,AL,0.04128960396039605
+walking dead,AR,0.007328124999999943
+walking dead,AZ,-0.023087227414330218
+walking dead,CA,0.0527232142857142
+walking dead,CO,0.056887931034482746
+walking dead,CT,0.07070163934426225
+walking dead,DC,0.04104220779220772
+walking dead,DE,-0.2294835164835166
+walking dead,FL,-0.06413097514340342
+walking dead,GA,0.005920600858369113
+walking dead,HI,-0.07531818181818194
+walking dead,IA,-0.050932000000000026
+walking dead,ID,-0.24181094527363206
+walking dead,IL,-0.023593078758949886
+walking dead,IN,0.034254032258064504
+walking dead,KS,0.14608715596330266
+walking dead,KY,3.0672268907564035E-4
+walking dead,LA,0.09078780487804876
+walking dead,MA,0.12913173652694598
+walking dead,MD,-0.08582993197278894
+walking dead,ME,-0.09051417004048583
+walking dead,MI,0.010651493598861977
+walking dead,MN,-0.021907630522088474
+walking dead,MO,-0.0478362573099417
+walking dead,MS,0.08007734806629835
+walking dead,MT,-0.18380597014925376
+walking dead,NC,0.00275342465753421
+walking dead,ND,0.47961538461538455
+walking dead,NE,0.03297794117647056
+walking dead,NH,-0.07853658536585365
+walking dead,NJ,0.015243697478991574
+walking dead,NM,-0.10454794520547947
+walking dead,NV,-0.08405194805194816
+walking dead,NY,-0.006331246086412007
+walking dead,OH,0.029127176381529157
+walking dead,OK,0.003664406779660967
+walking dead,OR,-0.07245671641791057
+walking dead,PA,0.002282442748091602
+walking dead,RI,0.15545312499999997
+walking dead,SC,-0.04115315315315319
+walking dead,SD,0.20432000000000003
+walking dead,TN,0.060621013133208175
+walking dead,TX,0.040174918684496075
+walking dead,UT,-0.23580487804878045
+walking dead,VA,0.05051951951951949
+walking dead,VT,-0.17666666666666664
+walking dead,WA,-0.053871681415929414
+walking dead,WI,-0.16788160676532757
+walking dead,WV,0.0790486111111111
+walking dead,WY,-0.20695370370370375
+westworld,AL,-0.4488888888888889
+westworld,AR,0.6585
+westworld,AZ,-0.6336140350877195
+westworld,CA,-0.10401893939393934
+westworld,CO,-0.04731249999999999
+westworld,CT,0.3737
+westworld,DC,0.0024864864864864796
+westworld,FL,0.08683333333333328
+westworld,GA,-0.42755
+westworld,HI,-0.275
+westworld,IA,-0.4531428571428572
+westworld,ID,0.6131666666666666
+westworld,IL,-0.176974358974359
+westworld,IN,-0.1271
+westworld,KS,-0.4288
+westworld,KY,-0.5186999999999999
+westworld,LA,-0.19726315789473686
+westworld,MA,-0.35403999999999997
+westworld,MD,-0.14752173913043481
+westworld,ME,-0.4125000000000001
+westworld,MI,-0.06842857142857144
+westworld,MN,0.2174615384615384
+westworld,MO,-0.14328571428571427
+westworld,MS,0.1895
+westworld,NC,-0.08637500000000001
+westworld,NE,-0.4316666666666667
+westworld,NJ,-0.2002105263157895
+westworld,NM,0.09280000000000002
+westworld,NV,-0.49030000000000007
+westworld,NY,-0.2747948717948718
+westworld,OH,0.15147826086956523
+westworld,OK,-0.2973846153846154
+westworld,OR,-0.293962962962963
+westworld,PA,-0.13321428571428573
+westworld,RI,-0.29233333333333333
+westworld,SC,0.04530769230769231
+westworld,SD,0.178
+westworld,TN,-0.26524137931034486
+westworld,TX,-0.2151904761904762
+westworld,UT,0.078
+westworld,VA,-0.02252631578947371
+westworld,VT,-0.998
+westworld,WA,-0.20737500000000003
+westworld,WI,0.025959999999999983
+westworld,WV,0.822857142857143
+westworld,WY,-0.561
