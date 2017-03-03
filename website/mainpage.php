@@ -12,6 +12,8 @@ mainpage.php
 <?php
 
 	//set file paths here
+	$scales_path = 'scales' . '/';
+	$red_green_path = $scales_path . 'red_yellow_green_scale.png';
 	$image_path = 'images' . '/';
 	$state_images_dir = $image_path . 'state_show_sentiments' . '/';
 	$country_maps_dir = $image_path . 'show_maps' . '/';
@@ -87,6 +89,7 @@ mainpage.php
 				echo '<br><img id="map_usa" src="' . $map_file_path . '" alt="' . $map_alt . '">';
 
 				if($map_file_path !== $default_map_file_path){
+					echo '<br><img src="' . $red_green_path . '" alt="' . $map_alt . '"><br>';
 					echo '<br>The following chart shows how ' . $selected_show . ' compares across the US, on a scale of 1 to 10, with 10 being the highest sentiment';
 					echo '<br><img id="map_usa" src="' . $country_state_comps . $selected_show . '" alt="' . $map_alt . '">';
 				}
