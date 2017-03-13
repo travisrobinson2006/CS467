@@ -11,6 +11,8 @@ mainpage.php
 
 <?php
 
+	$debug = FALSE;//set debugging here, for ease of changing
+
 	//set file paths here
 	$scales_path = 'scales' . '/';
 	$red_green_path = $scales_path . 'red_yellow_green_scale.png';
@@ -20,7 +22,7 @@ mainpage.php
 	$country_state_comps = $image_path . 'state_comp_by_show' . '/';
 	$default_map_file_path = 'default_images/usa_map.png';
 
-	$debug = TRUE;//set debugging here, for ease of changing
+
 	if ($debug === TRUE){
 		error_reporting(-1);
 		ini_set('display_errors', 'On');		
@@ -44,14 +46,18 @@ mainpage.php
 
 	elseif ($_POST['user_state']) {//get individual state data
 
+		$user_state = $_POST['user_state'];
+		$chart_file_path = $state_images_dir . $user_state;
+		$chart_alt = 'Chart of ' . htmlspecialchars($_POST['user_state']);
+
+		unset($map_file_path);
+
 		if ($debug === TRUE){
 			echo "States View";
 			echo "chart: " . $chart_file_path;
 		}
 
-		$user_state = $_POST['user_state'];
-		$chart_file_path = $state_images_dir . $user_state;
-		$chart_alt = 'Chart of ' . htmlspecialchars($_POST['user_state']);
+
 	}
 
 	else {//get default 'no data' page
@@ -80,15 +86,18 @@ mainpage.php
 			<h1>Centaurus: Twitter Sentiment Visualization</h1>
 
 			<?php
-				if($map_file_path !== $default_map_file_path){
-					echo "The following map shows how each State across the mainland US feels about " . pathinfo($selected_show)['filename'] . " (Hawaii and Alaska not included in this map";
+				if(isset($map_file_path)){
+					if($map_file_path !== $default_map_file_path){
+						echo "The following map shows how each State across the mainland US feels about " . pathinfo($selected_show)['filename'] . " (Hawaii and Alaska not included in this map)";
+					}
+					else{
+						echo "This is the default map of the US. To see how a favorite show compares across the country, or, to see how your State feels about several different shows, select from one of the drop down menus below";
+					}
+					echo '<br><img id="map_usa" src="' . $map_file_path . '" alt="' . $map_alt . '">';					
 				}
-				else{
-					echo "This is the default map of the US. To see how a favorite show compares across the country, or, to see how your State feels about several different shows, select from one of the drop down menus below";
-				}
-				echo '<br><img id="map_usa" src="' . $map_file_path . '" alt="' . $map_alt . '">';
 
-				if($map_file_path !== $default_map_file_path){
+
+				if($map_file_path !== $default_map_file_path && isset($map_file_path)){
 					echo '<br><img src="' . $red_green_path . '" alt="' . $map_alt . '"><br>';
 					echo '<br>The following chart shows how ' . pathinfo($selected_show)['filename'] . ' compares across the US, on a scale of 1 to 10, with 10 being the highest sentiment';
 					echo '<br><img id="map_usa" src="' . $country_state_comps . $selected_show . '" alt="' . $map_alt . '">';
@@ -144,42 +153,5 @@ mainpage.php
 				</fieldset>				
 			</form>
 		</div>
-
-		<?php //Source: http://bl.ocks.org/NPashaP/a74faf20b492ad377312
-			echo '<div id="tooltip"></div><!-- div to hold tooltip. -->
-				<svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
-				<script src="uStates.js"></script> <!-- creates uStates. -->
-				<script src="http://d3js.org/d3.v3.min.js"></script>
-				<script>
-
-					function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
-						return "<h4>"+n+"</h4><table>"+
-							"<tr><td>Sentiment Score</td><td>"+(d.sentiment_score)+"</td></tr>"+
-							"</table>";
-					}
-					
-					var sampleData ={};	/* Sample random data. */	
-					["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
-					"ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH", 
-					"MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT", 
-					"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
-					"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
-						.forEach(function(d){ 
-							var sentiment_score=Math.round(10*Math.random());
-							sampleData[d]={sentiment_score:sentiment_score,color:d3.interpolate("#ffffcc", "#800026")(sentiment_score/10)}; 
-						});
-					
-					/* draw states on id #statesvg */	
-					uStates.draw("#statesvg", sampleData, tooltipHtml);
-					
-					d3.select(self.frameElement).style("height", "600px"); 
-				</script>';
-		 ?>
-
-
-
-
-
-
 	</body>
 </html>
