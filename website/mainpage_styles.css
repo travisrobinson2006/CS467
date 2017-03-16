@@ -1,9 +1,7 @@
-/*body {
-	background: 
-		linear-gradient(-90deg, black, white);
-	background-size: 16px 48px;
+body {
+	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
 }
-*/
+
 
 h1 {
 	color: blue;

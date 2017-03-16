@@ -110,6 +110,8 @@ mainpage.php
 
 			?>
 
+			<hr>
+
 			<p>
 				To see how Twitter users feel about your favorite (or least favorite!) shows in different States across the country, select your show from the drop down menu, and see how it does!
 			</p>
@@ -132,13 +134,15 @@ mainpage.php
 				</fieldset>
 			</form>
 
+			<hr>
+
 			<p>
-				To see how Twitter users in your State feel about all shows, select your state from the drop-down menu and below.
+				To see how Twitter users in your State feel about popular shows, select your state from the drop-down menu and below.
 			</p>
 
 			<form method="post">
 				<fieldset>
-					<legend>See How Your State Feels About Your Show</legend>
+					<legend>See How Your State Feels About Popular Show</legend>
 					<p><label>State: </label>
 						<select name="user_state">
 						<?php 
