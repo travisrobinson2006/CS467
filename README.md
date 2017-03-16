@@ -41,7 +41,7 @@ The dumpjson script will place timestamped json files in the directory unclean_t
 
 <b>To enter scores file into the Hadoop Distributed File System:</b>
 
-1) To put the output file you just created into the HDFS (distributed across the three worker nodes), type "hdfs dfs -put <i>outputfilename</i> /databases"
+1) To put the output file you just created into the HDFS (distributed across the three worker nodes), type "hdfs dfs -put <i>nbScores.txt</i> /databases"
 
 2) Check that your file was transferred successfully by entering "hadoop fs -ls /databases". The output file name should appear.
 
