@@ -3,8 +3,27 @@ from collections import Counter
 import csv
 import re
 import string
+import sys
+import os
 import sentiment_analyzer_lib.settings as settings
 
+
+#get the name of the file containing the tweets to score
+
+inputfilename = None
+if len(sys.argv) == 2:
+	print "Validating input file..."
+	inputfilename = sys.argv[1]
+	if os.path.isfile(inputfilename):
+		#inputfilename = sys.argv[1]
+		print "Input file is valid."
+	else:
+		print "The specified input file does not exist.\n"
+		sys.exit()
+	
+else:
+	inputfilename = "tweets_ready_for_use_final"
+	print "The input file has been set to the default: tweets_ready_for_use_final"
 
 sentCol = 0
 textCol = 1
@@ -77,10 +96,14 @@ def make_decision(text, make_class_prediction):
 	#Compute negative and positive probabilities
 	neg_prob = make_class_prediction(text, negative_counts, prob_negative, negative_review_count)
 	pos_prob = make_class_prediction(text, positive_counts, prob_positive, positive_review_count)
+	
+	if neg_prob == 0 or pos_prob == 0 or neg_prob + pos_prob == 0:
+		return [0, 0]
 	if neg_prob > pos_prob:
 		#print "Case 1"
 		#print("neg_prob = " + str(neg_prob))
 		#print("pos_prob = " + str(pos_prob))
+		
 		try:
 			compScore = (neg_prob - pos_prob) / float(neg_prob + pos_prob)
 			compScore = -1.0*round(compScore, 3)
@@ -110,7 +133,7 @@ def stripNonAscii(string):
 #print("Positive prediction: {0}".format(make_class_prediction(testText, positive_counts, prob_positive, positive_review_count)))
 
 #specify the names of the input file to be processed and the output file to be produced.
-inputfilename = "tweets_ready_for_use_final"
+#inputfilename = "tweets_ready_for_use_final"
 outputfilename = "nbScores.txt"
 
 outputfile = open(outputfilename, 'w')
