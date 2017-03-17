@@ -1,5 +1,5 @@
 use testdb;
-INSERT OVERWRITE LOCAL DIRECTORY '/home/robitrav/CS467/${hiveconf:dir}'
+INSERT OVERWRITE LOCAL DIRECTORY '${hiveconf:$pwd}/${hiveconf:dir}'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
-SELECT content_name, user_location, avg(score) FROM tweets_2_15 GROUP BY content_name, user_location;
+SELECT content_name, user_location, avg(score) FROM nbscores GROUP BY content_name, user_location;
